@@ -1,0 +1,55 @@
+"Welcome to the Future of Finance" = "Bienvenue dans le futur de la finance";
+"Your gateway to a world of cryptocurrencies. Buy, sell, and trade with ease." = "Votre passerelle vers un monde de crypto-monnaies. Achetez, vendez et échangez en toute simplicité.";
+"Get Started"= "Commencer";
+"Login successful!" = "Connexion réussie!";
+"Email" = "E-mail";
+"Password" = "Mot de passe";
+"Forgot Password?" = "Mot de passe oublié?";
+"Submit" = "Soumettre";
+"Please enter email" = "Veuillez entrer l'e-mail";
+"Please enter valid email" = "Veuillez entrer un e-mail valide";
+"Password is empty" = "Le mot de passe est vide";
+"Password must be at least 8 characters long"="Password must be au moins 8 caractères long";
+
+"Wallet Balance:" = "Solde du portefeuille:";
+"Buy" = "Acheter";
+"Sell" = "Vendre";
+"Investment" = "Investissement";
+"ID returns" = "Revenus ID";
+"Total Return" = "Rendement total";
+"Downloading…" = "Téléchargement…";
+"Fetching data, please wait..." = "Récupération des données, veuillez patienter...";
+"Currency" = "Devise";
+"Price" = "Prix";
+"Date" = "Date";
+
+"Portfolio" = "Portefeuille";
+"Markets" = "Marchés";
+"Cards" = "Cartes";
+"Convert" = "Convertir";
+"Profile" = "Profil";
+
+"Support" = "Assistance";
+"General Settings" = "Paramètres généraux";
+"Logout" = "Se déconnecter";
+
+"Credits" = "Crédits";
+"Contact Support" = "Contacter le support";
+"Terms and Conditions" = "Termes et conditions";
+"Privacy Policy" = "Politique de confidentialité";
+"Help Center" = "Centre d'aide";
+"Security" = "Sécurité";
+"Logout" = "Se déconnecter";
+"Theme Settings" = "Paramètres du thème";
+"Light" = "Clair";
+"Dark" = "Sombre";
+
+"Card Number"="Numéro de carte";
+"Done" = "Fait";
+"Add Card"="Ajouter une carte";
+
+"Enter Currency Value" = "Entrez la valeur de la devise";
+"Converted Currency Value" = "Valeur de la devise convertie";
+"Search..." = "Rechercher...";
+"Select an Option" = "Sélectionnez une option";
+

@@ -1,0 +1,55 @@
+"Welcome to the Future of Finance" = "நிதியின் எதிர்காலத்திற்கு வரவேற்கிறோம்";
+"Your gateway to a world of cryptocurrencies. Buy, sell, and trade with ease."="கிரிப்டோகரன்ஸிகளின் உலகத்திற்கான உங்கள் நுழைவாயில். எளிதாக வாங்கவும், விற்கவும் மற்றும் வர்த்தகம் செய்யவும்.";
+"Get Started" = "தொடங்குங்கள்";
+"Login successful!" = "உள்நுழைவு வெற்றிகரமாக!";
+"Email" = "மின்னஞ்சல்";
+"Password" = "கடவுச்சொல்";
+"Forgot Password?" = "கடவுச்சொல்லை மறந்துவிட்டீர்களா?";
+"Submit" = "சமர்ப்பிக்கவும்";
+"Please enter email" = "மின்னஞ்சலை உள்ளிடவும்";
+"Please enter valid email" = "சரியான மின்னஞ்சலை உள்ளிடவும்";
+"Password is empty" = "கடவுச்சொல் காலியாக உள்ளது";
+"Password must be at least 8 characters long" = "கடவுச்சொல் குறைந்தது 8 எழுத்துகளுக்கு நீளமானதாக இருக்க வேண்டும்";
+
+"Wallet Balance:" = "பணப்பை இருப்பு:";
+"Buy" = "கொள்முதல்";
+"Sell" = "விற்பனை";
+"Investment" = "முதலீடு";
+"ID returns" = "அடையாள வருவாய்";
+"Total Return" = "மொத்த வருவாய்";
+"Downloading…" = "பதிவிறக்குகிறது…";
+"Fetching data, please wait..." = "தரவை எடுத்து வருகிறோம், காத்திருக்கவும்...";
+"Currency" = "நாணயம்";
+"Price" = "விலை";
+"Date" = "தேதி";
+
+"Portfolio" = "போர்ட்ஃபோலியோ";
+"Markets" = "சந்தைகள்";
+"Cards" = "கார்டுகள்";
+"Convert" = "மாற்றம்";
+"Profile" = "சுயவிவரம்";
+
+"Support" = "ஆதரவு";
+"General Settings" = "பொது அமைப்புகள்";
+"Logout" = "வெளியேறு";
+
+"Credits" = "கிரெடிட்ஸ்";
+"Contact Support" = "ஆதரவை தொடர்பு கொள்ளவும்";
+"Terms and Conditions" = "விதிமுறைகள் மற்றும் நிபந்தனைகள்";
+"Privacy Policy" = "தனியுரிமை கொள்கை";
+"Help Center" = "உதவி மையம்";
+"Security" = "பாதுகாப்பு";
+"Logout" = "வெளியேறு";
+"Theme Settings" = "தீம் அமைப்புகள்";
+"Light" = "ஒளி";
+"Dark" = "முரண்கட்ட";
+
+
+"Done" = "முடிந்தது";
+"Card Number" = "அட்டை எண்";
+"Add Card"="அட்டையைச் சேர்";
+
+"Enter Currency Value" = "நாணய மதிப்பை உள்ளிடுங்கள்";
+"Converted Currency Value" = "மாற்றிய நாணய மதிப்பு";
+"Search..." = "தேடு...";
+"Select an Option" = "ஒரு தேர்வைத் தேர்ந்தெடுக்கவும்";

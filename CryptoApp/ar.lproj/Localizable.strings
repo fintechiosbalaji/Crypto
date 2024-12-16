@@ -1,0 +1,55 @@
+"Welcome to the Future of Finance" = "مرحبًا بك في مستقبل المالية";
+"Your gateway to a world of cryptocurrencies. Buy, sell, and trade with ease." = "بوابتك إلى عالم العملات الرقمية. اشترِ، بِع، وتداول بسهولة.";
+"Get Started" = "ابدأ الآن";
+"login_success" = "تم تسجيل الدخول بنجاح!";
+"email" = "البريد الإلكتروني";
+"password" = "كلمة المرور";
+"Forgot Password?" = "هل نسيت كلمة المرور؟";
+"submit" = "إرسال";
+"Please enter email" = "يرجى إدخال البريد الإلكتروني";
+"Please enter valid email" = "يرجى إدخال بريد إلكتروني صالح";
+"Password is empty" = "كلمة المرور فارغة";
+"Password must be at least 8 characters long" = "يجب أن تكون كلمة المرور مكونة من 8 أحرف على الأقل";
+
+"Wallet Balance:" = "رصيد المحفظة:";
+"Buy" = "شراء";
+"Sell" = "بيع";
+"Investment" = "الاستثمار";
+"ID returns" = "عائدات الهوية";
+"Total Return" = "العائد الإجمالي";
+"Downloading…" = "جاري التحميل…";
+"Fetching data, please wait..." = "جاري جلب البيانات، يرجى الانتظار...";
+"Currency" = "العملة";
+"Price" = "السعر";
+"Date" = "التاريخ";
+
+"Portfolio" = "محفظة";
+"Markets" = "أسواق";
+"Cards" = "بطاقات";
+"Convert" = "تحويل";
+"Profile" = "الملف الشخصي";
+
+"Support" = "الدعم";
+"General Settings" = "الإعدادات العامة";
+"Logout" = "تسجيل الخروج";
+
+"Credits" = "الاعتمادات";
+"Contact Support" = "اتصل بالدعم";
+"Terms and Conditions" = "الشروط والأحكام";
+"Privacy Policy" = "سياسة الخصوصية";
+"Help Center" = "مركز المساعدة";
+"Security" = "الأمان";
+"Logout" = "تسجيل الخروج";
+"Theme Settings" = "إعدادات السمة";
+"Light" = "فاتح";
+"Dark" = "داكن";
+
+
+"Card Number" = "رقم البطاقة";
+"Done" = "تم";
+"Add Card"="إضافة بطاقة";
+
+"Enter Currency Value" = "أدخل قيمة العملة";
+"Converted Currency Value" = "قيمة العملة المحولة";
+"Search..." = "بحث...";
+"Select an Option" = "اختر خيارًا";

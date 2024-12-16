@@ -1,0 +1,1211 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0222037E2CF9D68A00A2693E /* CurrencyConverterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022203772CF9D68A00A2693E /* CurrencyConverterPresenter.swift */; };
+		0222037F2CF9D68A00A2693E /* CurrencyConverterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022203782CF9D68A00A2693E /* CurrencyConverterRouter.swift */; };
+		022203802CF9D68A00A2693E /* CurrencyConverterContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022203792CF9D68A00A2693E /* CurrencyConverterContracts.swift */; };
+		022203812CF9D68A00A2693E /* CurrencyConverterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0222037A2CF9D68A00A2693E /* CurrencyConverterInteractor.swift */; };
+		022203822CF9D68A00A2693E /* CurrencyConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0222037B2CF9D68A00A2693E /* CurrencyConverterView.swift */; };
+		022203832CF9D68A00A2693E /* CurrencyConverterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0222037C2CF9D68A00A2693E /* CurrencyConverterEntity.swift */; };
+		022203842CF9D68A00A2693E /* CurrencyConverterDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0222037D2CF9D68A00A2693E /* CurrencyConverterDependencies.swift */; };
+		022203872CF9D6BD00A2693E /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022203862CF9D6BD00A2693E /* DropDownView.swift */; };
+		0235E25A2CE8A2D0006B2DFD /* CardDetails.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0235E2582CE8A2D0006B2DFD /* CardDetails.xcdatamodeld */; };
+		0235E25C2CE8A34C006B2DFD /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0235E25B2CE8A34C006B2DFD /* DataController.swift */; };
+		0236F2322CE60EA2006A9A7E /* CryptoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236F2312CE60EA2006A9A7E /* CryptoAppApp.swift */; };
+		0236F2342CE60EA2006A9A7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236F2332CE60EA2006A9A7E /* ContentView.swift */; };
+		0236F2362CE60EA4006A9A7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0236F2352CE60EA4006A9A7E /* Assets.xcassets */; };
+		0236F2392CE60EA4006A9A7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0236F2382CE60EA4006A9A7E /* Preview Assets.xcassets */; };
+		0236F2432CE60EA4006A9A7E /* CryptoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236F2422CE60EA4006A9A7E /* CryptoAppTests.swift */; };
+		0236F24D2CE60EA4006A9A7E /* CryptoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236F24C2CE60EA4006A9A7E /* CryptoAppUITests.swift */; };
+		0236F24F2CE60EA4006A9A7E /* CryptoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236F24E2CE60EA4006A9A7E /* CryptoAppUITestsLaunchTests.swift */; };
+		0236F2622CE61504006A9A7E /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236F25B2CE61504006A9A7E /* WelcomePresenter.swift */; };
+		0236F2632CE61504006A9A7E /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236F25C2CE61504006A9A7E /* WelcomeRouter.swift */; };
+		0236F2642CE61504006A9A7E /* WelcomeContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236F25D2CE61504006A9A7E /* WelcomeContracts.swift */; };
+		0236F2652CE61504006A9A7E /* WelcomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236F25E2CE61504006A9A7E /* WelcomeInteractor.swift */; };
+		0236F2662CE61504006A9A7E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236F25F2CE61504006A9A7E /* WelcomeView.swift */; };
+		0236F2672CE61504006A9A7E /* WelcomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236F2602CE61504006A9A7E /* WelcomeEntity.swift */; };
+		0236F2682CE61504006A9A7E /* WelcomeDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236F2612CE61504006A9A7E /* WelcomeDependencies.swift */; };
+		0236F26B2CE61DB7006A9A7E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236F26A2CE61DB7006A9A7E /* Color.swift */; };
+		0236F27E2CE6422E006A9A7E /* ValidationEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236F27D2CE6422E006A9A7E /* ValidationEnums.swift */; };
+		0236F2802CE64730006A9A7E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236F27F2CE64730006A9A7E /* String.swift */; };
+		0242EFA32CEB611F00F36A4B /* Helper-Wraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0242EFA22CEB611F00F36A4B /* Helper-Wraper.swift */; };
+		02664A112CEA258200DD8E2D /* MarketPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02664A0A2CEA258200DD8E2D /* MarketPresenter.swift */; };
+		02664A122CEA258200DD8E2D /* MarketRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02664A0B2CEA258200DD8E2D /* MarketRouter.swift */; };
+		02664A132CEA258200DD8E2D /* MarketContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02664A0C2CEA258200DD8E2D /* MarketContracts.swift */; };
+		02664A142CEA258200DD8E2D /* MarketInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02664A0D2CEA258200DD8E2D /* MarketInteractor.swift */; };
+		02664A152CEA258200DD8E2D /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02664A0E2CEA258200DD8E2D /* MarketView.swift */; };
+		02664A162CEA258200DD8E2D /* MarketEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02664A0F2CEA258200DD8E2D /* MarketEntity.swift */; };
+		02664A172CEA258200DD8E2D /* MarketDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02664A102CEA258200DD8E2D /* MarketDependencies.swift */; };
+		0266914F2CECE18A00925EC4 /* Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266914E2CECE18A00925EC4 /* Encryption.swift */; };
+		026691512CECE23700925EC4 /* CustomModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026691502CECE23700925EC4 /* CustomModifier.swift */; };
+		0270A0612CFD850F0052EB29 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270A0602CFD850F0052EB29 /* VideoPlayer.swift */; };
+		0270A0642CFD93DC0052EB29 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0270A0622CFD93DC0052EB29 /* Localizable.strings */; };
+		0270A0682CFD9A2F0052EB29 /* ConstantText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270A0672CFD9A2F0052EB29 /* ConstantText.swift */; };
+		027BF52B2CF42FC1009813D9 /* PortfolioContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BF5232CF42FC1009813D9 /* PortfolioContracts.swift */; };
+		027BF52C2CF42FC1009813D9 /* PortfolioDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BF5242CF42FC1009813D9 /* PortfolioDependencies.swift */; };
+		027BF52D2CF42FC1009813D9 /* PortfolioEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BF5252CF42FC1009813D9 /* PortfolioEntity.swift */; };
+		027BF52E2CF42FC1009813D9 /* PortfolioInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BF5262CF42FC1009813D9 /* PortfolioInteractor.swift */; };
+		027BF52F2CF42FC1009813D9 /* PortfolioPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BF5272CF42FC1009813D9 /* PortfolioPresenter.swift */; };
+		027BF5302CF42FC1009813D9 /* PortfolioRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BF5282CF42FC1009813D9 /* PortfolioRouter.swift */; };
+		027BF5312CF42FC1009813D9 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BF5292CF42FC1009813D9 /* PortfolioView.swift */; };
+		027BF5402CF43345009813D9 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BF5322CF43345009813D9 /* NetworkManagerProtocol.swift */; };
+		027BF5412CF43345009813D9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BF5342CF43345009813D9 /* Constants.swift */; };
+		027BF5422CF43345009813D9 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BF5352CF43345009813D9 /* RequestMethod.swift */; };
+		027BF5432CF43345009813D9 /* URLRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BF5362CF43345009813D9 /* URLRouter.swift */; };
+		027BF5442CF43345009813D9 /* Decoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BF5382CF43345009813D9 /* Decoders.swift */; };
+		027BF5472CF43345009813D9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BF53D2CF43345009813D9 /* NetworkManager.swift */; };
+		0283949A2D070F37009D5802 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028394992D070F37009D5802 /* CustomViews.swift */; };
+		02BAF2322D08204600C308D3 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BAF2312D08204600C308D3 /* ProgressView.swift */; };
+		02C275952CF5A8B60032DB60 /* BarchartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C275942CF5A8B60032DB60 /* BarchartView.swift */; };
+		02C275972CF5AA780032DB60 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C275962CF5AA770032DB60 /* PieChartView.swift */; };
+		02DE0B072CE914AA003DEE33 /* TabViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE0B002CE914AA003DEE33 /* TabViewPresenter.swift */; };
+		02DE0B082CE914AA003DEE33 /* TabViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE0B012CE914AA003DEE33 /* TabViewRouter.swift */; };
+		02DE0B092CE914AA003DEE33 /* TabViewContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE0B022CE914AA003DEE33 /* TabViewContracts.swift */; };
+		02DE0B0A2CE914AA003DEE33 /* TabViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE0B032CE914AA003DEE33 /* TabViewInteractor.swift */; };
+		02DE0B0B2CE914AA003DEE33 /* TabViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE0B042CE914AA003DEE33 /* TabViewView.swift */; };
+		02DE0B0C2CE914AA003DEE33 /* TabViewEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE0B052CE914AA003DEE33 /* TabViewEntity.swift */; };
+		02DE0B0D2CE914AA003DEE33 /* TabViewDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE0B062CE914AA003DEE33 /* TabViewDependencies.swift */; };
+		02DE0B192CE917FC003DEE33 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE0B122CE917FC003DEE33 /* SettingsPresenter.swift */; };
+		02DE0B1A2CE917FC003DEE33 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE0B132CE917FC003DEE33 /* SettingsRouter.swift */; };
+		02DE0B1B2CE917FC003DEE33 /* SettingsContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE0B142CE917FC003DEE33 /* SettingsContracts.swift */; };
+		02DE0B1C2CE917FC003DEE33 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE0B152CE917FC003DEE33 /* SettingsInteractor.swift */; };
+		02DE0B1D2CE917FC003DEE33 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE0B162CE917FC003DEE33 /* SettingsView.swift */; };
+		02DE0B1E2CE917FC003DEE33 /* SettingsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE0B172CE917FC003DEE33 /* SettingsEntity.swift */; };
+		02DE0B1F2CE917FC003DEE33 /* SettingsDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE0B182CE917FC003DEE33 /* SettingsDependencies.swift */; };
+		02DE0B282CE91A3A003DEE33 /* ManageCardsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE0B212CE91A3A003DEE33 /* ManageCardsPresenter.swift */; };
+		02DE0B292CE91A3A003DEE33 /* ManageCardsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE0B222CE91A3A003DEE33 /* ManageCardsRouter.swift */; };
+		02DE0B2A2CE91A3A003DEE33 /* ManageCardsContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE0B232CE91A3A003DEE33 /* ManageCardsContracts.swift */; };
+		02DE0B2B2CE91A3A003DEE33 /* ManageCardsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE0B242CE91A3A003DEE33 /* ManageCardsInteractor.swift */; };
+		02DE0B2C2CE91A3A003DEE33 /* ManageCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE0B252CE91A3A003DEE33 /* ManageCardsView.swift */; };
+		02DE0B2D2CE91A3A003DEE33 /* ManageCardsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE0B262CE91A3A003DEE33 /* ManageCardsEntity.swift */; };
+		02DE0B2E2CE91A3A003DEE33 /* ManageCardsDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE0B272CE91A3A003DEE33 /* ManageCardsDependencies.swift */; };
+		02DEF9822CF48C2600AD3908 /* CustomChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DEF9812CF48C2600AD3908 /* CustomChart.swift */; };
+		02DEF98A2CF4AF3A00AD3908 /* CryptoListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DEF9832CF4AF3A00AD3908 /* CryptoListPresenter.swift */; };
+		02DEF98B2CF4AF3A00AD3908 /* CryptoListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DEF9842CF4AF3A00AD3908 /* CryptoListRouter.swift */; };
+		02DEF98C2CF4AF3A00AD3908 /* CryptoListContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DEF9852CF4AF3A00AD3908 /* CryptoListContracts.swift */; };
+		02DEF98D2CF4AF3A00AD3908 /* CryptoListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DEF9862CF4AF3A00AD3908 /* CryptoListInteractor.swift */; };
+		02DEF98E2CF4AF3A00AD3908 /* CryptoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DEF9872CF4AF3A00AD3908 /* CryptoListView.swift */; };
+		02DEF98F2CF4AF3A00AD3908 /* CryptoListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DEF9882CF4AF3A00AD3908 /* CryptoListEntity.swift */; };
+		02DEF9902CF4AF3A00AD3908 /* CryptoListDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DEF9892CF4AF3A00AD3908 /* CryptoListDependencies.swift */; };
+		02EA33462D00BB430042948D /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EA33452D00BB430042948D /* ThemeManager.swift */; };
+		02EB0E0E2CEB05480015C75C /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EB0E0D2CEB05480015C75C /* LineChartView.swift */; };
+		02F083142D0FF53A00120DF4 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 02F083132D0FF53A00120DF4 /* Nimble */; };
+		02F083162D103AED00120DF4 /* LocalizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F083152D103AED00120DF4 /* LocalizationService.swift */; };
+		02F943112D073DC600724498 /* SigninPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F9430A2D073DC600724498 /* SigninPresenter.swift */; };
+		02F943122D073DC600724498 /* SigninRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F9430B2D073DC600724498 /* SigninRouter.swift */; };
+		02F943132D073DC600724498 /* SigninContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F9430C2D073DC600724498 /* SigninContracts.swift */; };
+		02F943142D073DC600724498 /* SigninInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F9430D2D073DC600724498 /* SigninInteractor.swift */; };
+		02F943152D073DC600724498 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F9430E2D073DC600724498 /* SigninView.swift */; };
+		02F943162D073DC600724498 /* SigninEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F9430F2D073DC600724498 /* SigninEntity.swift */; };
+		02F943172D073DC600724498 /* SigninDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F943102D073DC600724498 /* SigninDependencies.swift */; };
+		02F9431A2D077BCE00724498 /* SignInInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F943192D077BCE00724498 /* SignInInteractorTests.swift */; };
+		02F9431C2D077BEC00724498 /* SignInPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F9431B2D077BEC00724498 /* SignInPresenterTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0236F23F2CE60EA4006A9A7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0236F2262CE60EA2006A9A7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0236F22D2CE60EA2006A9A7E;
+			remoteInfo = CryptoApp;
+		};
+		0236F2492CE60EA4006A9A7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0236F2262CE60EA2006A9A7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0236F22D2CE60EA2006A9A7E;
+			remoteInfo = CryptoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		022203772CF9D68A00A2693E /* CurrencyConverterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterPresenter.swift; sourceTree = "<group>"; };
+		022203782CF9D68A00A2693E /* CurrencyConverterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterRouter.swift; sourceTree = "<group>"; };
+		022203792CF9D68A00A2693E /* CurrencyConverterContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterContracts.swift; sourceTree = "<group>"; };
+		0222037A2CF9D68A00A2693E /* CurrencyConverterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterInteractor.swift; sourceTree = "<group>"; };
+		0222037B2CF9D68A00A2693E /* CurrencyConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterView.swift; sourceTree = "<group>"; };
+		0222037C2CF9D68A00A2693E /* CurrencyConverterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterEntity.swift; sourceTree = "<group>"; };
+		0222037D2CF9D68A00A2693E /* CurrencyConverterDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterDependencies.swift; sourceTree = "<group>"; };
+		022203862CF9D6BD00A2693E /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
+		0235E2592CE8A2D0006B2DFD /* CardDetails.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CardDetails.xcdatamodel; sourceTree = "<group>"; };
+		0235E25B2CE8A34C006B2DFD /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		0236F22E2CE60EA2006A9A7E /* CryptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0236F2312CE60EA2006A9A7E /* CryptoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppApp.swift; sourceTree = "<group>"; };
+		0236F2332CE60EA2006A9A7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0236F2352CE60EA4006A9A7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0236F2382CE60EA4006A9A7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0236F23E2CE60EA4006A9A7E /* CryptoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0236F2422CE60EA4006A9A7E /* CryptoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppTests.swift; sourceTree = "<group>"; };
+		0236F2482CE60EA4006A9A7E /* CryptoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0236F24C2CE60EA4006A9A7E /* CryptoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppUITests.swift; sourceTree = "<group>"; };
+		0236F24E2CE60EA4006A9A7E /* CryptoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0236F25B2CE61504006A9A7E /* WelcomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
+		0236F25C2CE61504006A9A7E /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
+		0236F25D2CE61504006A9A7E /* WelcomeContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeContracts.swift; sourceTree = "<group>"; };
+		0236F25E2CE61504006A9A7E /* WelcomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeInteractor.swift; sourceTree = "<group>"; };
+		0236F25F2CE61504006A9A7E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		0236F2602CE61504006A9A7E /* WelcomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeEntity.swift; sourceTree = "<group>"; };
+		0236F2612CE61504006A9A7E /* WelcomeDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeDependencies.swift; sourceTree = "<group>"; };
+		0236F26A2CE61DB7006A9A7E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		0236F27D2CE6422E006A9A7E /* ValidationEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationEnums.swift; sourceTree = "<group>"; };
+		0236F27F2CE64730006A9A7E /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		0242EFA22CEB611F00F36A4B /* Helper-Wraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper-Wraper.swift"; sourceTree = "<group>"; };
+		02664A0A2CEA258200DD8E2D /* MarketPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPresenter.swift; sourceTree = "<group>"; };
+		02664A0B2CEA258200DD8E2D /* MarketRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketRouter.swift; sourceTree = "<group>"; };
+		02664A0C2CEA258200DD8E2D /* MarketContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketContracts.swift; sourceTree = "<group>"; };
+		02664A0D2CEA258200DD8E2D /* MarketInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketInteractor.swift; sourceTree = "<group>"; };
+		02664A0E2CEA258200DD8E2D /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
+		02664A0F2CEA258200DD8E2D /* MarketEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketEntity.swift; sourceTree = "<group>"; };
+		02664A102CEA258200DD8E2D /* MarketDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDependencies.swift; sourceTree = "<group>"; };
+		0266914E2CECE18A00925EC4 /* Encryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encryption.swift; sourceTree = "<group>"; };
+		026691502CECE23700925EC4 /* CustomModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModifier.swift; sourceTree = "<group>"; };
+		0270A0602CFD850F0052EB29 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		0270A0632CFD93DC0052EB29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0270A0652CFD93F00052EB29 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0270A0662CFD93F50052EB29 /* ta-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ta-IN"; path = "ta-IN.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		0270A0672CFD9A2F0052EB29 /* ConstantText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantText.swift; sourceTree = "<group>"; };
+		0270A0692CFDB38F0052EB29 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		027BF5232CF42FC1009813D9 /* PortfolioContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioContracts.swift; sourceTree = "<group>"; };
+		027BF5242CF42FC1009813D9 /* PortfolioDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioDependencies.swift; sourceTree = "<group>"; };
+		027BF5252CF42FC1009813D9 /* PortfolioEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioEntity.swift; sourceTree = "<group>"; };
+		027BF5262CF42FC1009813D9 /* PortfolioInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioInteractor.swift; sourceTree = "<group>"; };
+		027BF5272CF42FC1009813D9 /* PortfolioPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioPresenter.swift; sourceTree = "<group>"; };
+		027BF5282CF42FC1009813D9 /* PortfolioRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioRouter.swift; sourceTree = "<group>"; };
+		027BF5292CF42FC1009813D9 /* PortfolioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
+		027BF5322CF43345009813D9 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		027BF5342CF43345009813D9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		027BF5352CF43345009813D9 /* RequestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		027BF5362CF43345009813D9 /* URLRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRouter.swift; sourceTree = "<group>"; };
+		027BF5382CF43345009813D9 /* Decoders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decoders.swift; sourceTree = "<group>"; };
+		027BF53D2CF43345009813D9 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		028394992D070F37009D5802 /* CustomViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
+		02BAF2312D08204600C308D3 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		02C275942CF5A8B60032DB60 /* BarchartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarchartView.swift; sourceTree = "<group>"; };
+		02C275962CF5AA770032DB60 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		02DE0B002CE914AA003DEE33 /* TabViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewPresenter.swift; sourceTree = "<group>"; };
+		02DE0B012CE914AA003DEE33 /* TabViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewRouter.swift; sourceTree = "<group>"; };
+		02DE0B022CE914AA003DEE33 /* TabViewContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewContracts.swift; sourceTree = "<group>"; };
+		02DE0B032CE914AA003DEE33 /* TabViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewInteractor.swift; sourceTree = "<group>"; };
+		02DE0B042CE914AA003DEE33 /* TabViewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewView.swift; sourceTree = "<group>"; };
+		02DE0B052CE914AA003DEE33 /* TabViewEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewEntity.swift; sourceTree = "<group>"; };
+		02DE0B062CE914AA003DEE33 /* TabViewDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewDependencies.swift; sourceTree = "<group>"; };
+		02DE0B122CE917FC003DEE33 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		02DE0B132CE917FC003DEE33 /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		02DE0B142CE917FC003DEE33 /* SettingsContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsContracts.swift; sourceTree = "<group>"; };
+		02DE0B152CE917FC003DEE33 /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		02DE0B162CE917FC003DEE33 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		02DE0B172CE917FC003DEE33 /* SettingsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEntity.swift; sourceTree = "<group>"; };
+		02DE0B182CE917FC003DEE33 /* SettingsDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDependencies.swift; sourceTree = "<group>"; };
+		02DE0B212CE91A3A003DEE33 /* ManageCardsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageCardsPresenter.swift; sourceTree = "<group>"; };
+		02DE0B222CE91A3A003DEE33 /* ManageCardsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageCardsRouter.swift; sourceTree = "<group>"; };
+		02DE0B232CE91A3A003DEE33 /* ManageCardsContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageCardsContracts.swift; sourceTree = "<group>"; };
+		02DE0B242CE91A3A003DEE33 /* ManageCardsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageCardsInteractor.swift; sourceTree = "<group>"; };
+		02DE0B252CE91A3A003DEE33 /* ManageCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageCardsView.swift; sourceTree = "<group>"; };
+		02DE0B262CE91A3A003DEE33 /* ManageCardsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageCardsEntity.swift; sourceTree = "<group>"; };
+		02DE0B272CE91A3A003DEE33 /* ManageCardsDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageCardsDependencies.swift; sourceTree = "<group>"; };
+		02DEF9812CF48C2600AD3908 /* CustomChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChart.swift; sourceTree = "<group>"; };
+		02DEF9832CF4AF3A00AD3908 /* CryptoListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListPresenter.swift; sourceTree = "<group>"; };
+		02DEF9842CF4AF3A00AD3908 /* CryptoListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListRouter.swift; sourceTree = "<group>"; };
+		02DEF9852CF4AF3A00AD3908 /* CryptoListContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListContracts.swift; sourceTree = "<group>"; };
+		02DEF9862CF4AF3A00AD3908 /* CryptoListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListInteractor.swift; sourceTree = "<group>"; };
+		02DEF9872CF4AF3A00AD3908 /* CryptoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListView.swift; sourceTree = "<group>"; };
+		02DEF9882CF4AF3A00AD3908 /* CryptoListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListEntity.swift; sourceTree = "<group>"; };
+		02DEF9892CF4AF3A00AD3908 /* CryptoListDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListDependencies.swift; sourceTree = "<group>"; };
+		02EA33452D00BB430042948D /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		02EB0E0D2CEB05480015C75C /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		02F083152D103AED00120DF4 /* LocalizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationService.swift; sourceTree = "<group>"; };
+		02F9430A2D073DC600724498 /* SigninPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninPresenter.swift; sourceTree = "<group>"; };
+		02F9430B2D073DC600724498 /* SigninRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninRouter.swift; sourceTree = "<group>"; };
+		02F9430C2D073DC600724498 /* SigninContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninContracts.swift; sourceTree = "<group>"; };
+		02F9430D2D073DC600724498 /* SigninInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninInteractor.swift; sourceTree = "<group>"; };
+		02F9430E2D073DC600724498 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
+		02F9430F2D073DC600724498 /* SigninEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninEntity.swift; sourceTree = "<group>"; };
+		02F943102D073DC600724498 /* SigninDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninDependencies.swift; sourceTree = "<group>"; };
+		02F943192D077BCE00724498 /* SignInInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractorTests.swift; sourceTree = "<group>"; };
+		02F9431B2D077BEC00724498 /* SignInPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenterTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0236F22B2CE60EA2006A9A7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0236F23B2CE60EA4006A9A7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F083142D0FF53A00120DF4 /* Nimble in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0236F2452CE60EA4006A9A7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		022203852CF9D69500A2693E /* CurrencyConverter */ = {
+			isa = PBXGroup;
+			children = (
+				022203772CF9D68A00A2693E /* CurrencyConverterPresenter.swift */,
+				022203782CF9D68A00A2693E /* CurrencyConverterRouter.swift */,
+				022203792CF9D68A00A2693E /* CurrencyConverterContracts.swift */,
+				0222037A2CF9D68A00A2693E /* CurrencyConverterInteractor.swift */,
+				0222037B2CF9D68A00A2693E /* CurrencyConverterView.swift */,
+				0222037C2CF9D68A00A2693E /* CurrencyConverterEntity.swift */,
+				0222037D2CF9D68A00A2693E /* CurrencyConverterDependencies.swift */,
+				022203862CF9D6BD00A2693E /* DropDownView.swift */,
+			);
+			path = CurrencyConverter;
+			sourceTree = "<group>";
+		};
+		0236F2252CE60EA2006A9A7E = {
+			isa = PBXGroup;
+			children = (
+				0270A0622CFD93DC0052EB29 /* Localizable.strings */,
+				0235E2582CE8A2D0006B2DFD /* CardDetails.xcdatamodeld */,
+				0236F2302CE60EA2006A9A7E /* CryptoApp */,
+				0236F2412CE60EA4006A9A7E /* CryptoAppTests */,
+				0236F24B2CE60EA4006A9A7E /* CryptoAppUITests */,
+				0236F22F2CE60EA2006A9A7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0236F22F2CE60EA2006A9A7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0236F22E2CE60EA2006A9A7E /* CryptoApp.app */,
+				0236F23E2CE60EA4006A9A7E /* CryptoAppTests.xctest */,
+				0236F2482CE60EA4006A9A7E /* CryptoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0236F2302CE60EA2006A9A7E /* CryptoApp */ = {
+			isa = PBXGroup;
+			children = (
+				02C275932CF5A8970032DB60 /* HelperView */,
+				0236F2312CE60EA2006A9A7E /* CryptoAppApp.swift */,
+				0236F2332CE60EA2006A9A7E /* ContentView.swift */,
+				0236F27D2CE6422E006A9A7E /* ValidationEnums.swift */,
+				027BF53F2CF43345009813D9 /* Network */,
+				026691522CECE52C00925EC4 /* Modifier */,
+				0236F26C2CE61DC7006A9A7E /* Extension */,
+				0236F27C2CE62ADA006A9A7E /* Scene */,
+				0236F2352CE60EA4006A9A7E /* Assets.xcassets */,
+				0236F2372CE60EA4006A9A7E /* Preview Content */,
+				02F083172D103B3C00120DF4 /* Helper+Shared */,
+			);
+			path = CryptoApp;
+			sourceTree = "<group>";
+		};
+		0236F2372CE60EA4006A9A7E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0236F2382CE60EA4006A9A7E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0236F2412CE60EA4006A9A7E /* CryptoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				0236F2422CE60EA4006A9A7E /* CryptoAppTests.swift */,
+				0242EFA12CEB573E00F36A4B /* SignInTests */,
+			);
+			path = CryptoAppTests;
+			sourceTree = "<group>";
+		};
+		0236F24B2CE60EA4006A9A7E /* CryptoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0236F24C2CE60EA4006A9A7E /* CryptoAppUITests.swift */,
+				0236F24E2CE60EA4006A9A7E /* CryptoAppUITestsLaunchTests.swift */,
+			);
+			path = CryptoAppUITests;
+			sourceTree = "<group>";
+		};
+		0236F2692CE6150C006A9A7E /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				0236F25B2CE61504006A9A7E /* WelcomePresenter.swift */,
+				0236F25C2CE61504006A9A7E /* WelcomeRouter.swift */,
+				0236F25D2CE61504006A9A7E /* WelcomeContracts.swift */,
+				0236F25E2CE61504006A9A7E /* WelcomeInteractor.swift */,
+				0236F25F2CE61504006A9A7E /* WelcomeView.swift */,
+				0236F2602CE61504006A9A7E /* WelcomeEntity.swift */,
+				0236F2612CE61504006A9A7E /* WelcomeDependencies.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		0236F26C2CE61DC7006A9A7E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0266914E2CECE18A00925EC4 /* Encryption.swift */,
+				0236F26A2CE61DB7006A9A7E /* Color.swift */,
+				0236F27F2CE64730006A9A7E /* String.swift */,
+				0242EFA22CEB611F00F36A4B /* Helper-Wraper.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0236F27C2CE62ADA006A9A7E /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				027BF52A2CF42FC1009813D9 /* Portfolio */,
+				0236F2692CE6150C006A9A7E /* Welcome */,
+				02DE0B0E2CE914AF003DEE33 /* TabView */,
+				02DE0B2F2CE91A3D003DEE33 /* ManageCards */,
+				02DE0B202CE91801003DEE33 /* Settings */,
+				02664A182CEA258700DD8E2D /* Market */,
+				02DEF9912CF4AF4200AD3908 /* CryptoList */,
+				022203852CF9D69500A2693E /* CurrencyConverter */,
+				02F943182D073DCE00724498 /* Signin */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		0242EFA12CEB573E00F36A4B /* SignInTests */ = {
+			isa = PBXGroup;
+			children = (
+				02F943192D077BCE00724498 /* SignInInteractorTests.swift */,
+				02F9431B2D077BEC00724498 /* SignInPresenterTests.swift */,
+			);
+			path = SignInTests;
+			sourceTree = "<group>";
+		};
+		02664A182CEA258700DD8E2D /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				02664A0A2CEA258200DD8E2D /* MarketPresenter.swift */,
+				02664A0B2CEA258200DD8E2D /* MarketRouter.swift */,
+				02664A0C2CEA258200DD8E2D /* MarketContracts.swift */,
+				02664A0D2CEA258200DD8E2D /* MarketInteractor.swift */,
+				02664A0E2CEA258200DD8E2D /* MarketView.swift */,
+				02664A0F2CEA258200DD8E2D /* MarketEntity.swift */,
+				02664A102CEA258200DD8E2D /* MarketDependencies.swift */,
+				02EB0E0D2CEB05480015C75C /* LineChartView.swift */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
+		026691522CECE52C00925EC4 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				026691502CECE23700925EC4 /* CustomModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		027BF52A2CF42FC1009813D9 /* Portfolio */ = {
+			isa = PBXGroup;
+			children = (
+				027BF5232CF42FC1009813D9 /* PortfolioContracts.swift */,
+				027BF5242CF42FC1009813D9 /* PortfolioDependencies.swift */,
+				027BF5252CF42FC1009813D9 /* PortfolioEntity.swift */,
+				027BF5262CF42FC1009813D9 /* PortfolioInteractor.swift */,
+				027BF5272CF42FC1009813D9 /* PortfolioPresenter.swift */,
+				027BF5282CF42FC1009813D9 /* PortfolioRouter.swift */,
+				027BF5292CF42FC1009813D9 /* PortfolioView.swift */,
+			);
+			path = Portfolio;
+			sourceTree = "<group>";
+		};
+		027BF5332CF43345009813D9 /* Abstracts */ = {
+			isa = PBXGroup;
+			children = (
+				027BF5322CF43345009813D9 /* NetworkManagerProtocol.swift */,
+			);
+			path = Abstracts;
+			sourceTree = "<group>";
+		};
+		027BF5372CF43345009813D9 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				027BF5342CF43345009813D9 /* Constants.swift */,
+				027BF5352CF43345009813D9 /* RequestMethod.swift */,
+				027BF5362CF43345009813D9 /* URLRouter.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		027BF5392CF43345009813D9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				027BF5382CF43345009813D9 /* Decoders.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		027BF53E2CF43345009813D9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				027BF53D2CF43345009813D9 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		027BF53F2CF43345009813D9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				027BF5332CF43345009813D9 /* Abstracts */,
+				027BF5372CF43345009813D9 /* EndPoint */,
+				027BF5392CF43345009813D9 /* Helpers */,
+				027BF53E2CF43345009813D9 /* Services */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		02C275932CF5A8970032DB60 /* HelperView */ = {
+			isa = PBXGroup;
+			children = (
+				028394992D070F37009D5802 /* CustomViews.swift */,
+				02C275942CF5A8B60032DB60 /* BarchartView.swift */,
+				02C275962CF5AA770032DB60 /* PieChartView.swift */,
+				0270A0602CFD850F0052EB29 /* VideoPlayer.swift */,
+				02EA33452D00BB430042948D /* ThemeManager.swift */,
+				02BAF2312D08204600C308D3 /* ProgressView.swift */,
+			);
+			path = HelperView;
+			sourceTree = "<group>";
+		};
+		02DE0B0E2CE914AF003DEE33 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				02DE0B002CE914AA003DEE33 /* TabViewPresenter.swift */,
+				02DE0B012CE914AA003DEE33 /* TabViewRouter.swift */,
+				02DE0B022CE914AA003DEE33 /* TabViewContracts.swift */,
+				02DE0B032CE914AA003DEE33 /* TabViewInteractor.swift */,
+				02DE0B042CE914AA003DEE33 /* TabViewView.swift */,
+				02DE0B052CE914AA003DEE33 /* TabViewEntity.swift */,
+				02DE0B062CE914AA003DEE33 /* TabViewDependencies.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		02DE0B202CE91801003DEE33 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				02DE0B122CE917FC003DEE33 /* SettingsPresenter.swift */,
+				02DE0B132CE917FC003DEE33 /* SettingsRouter.swift */,
+				02DE0B142CE917FC003DEE33 /* SettingsContracts.swift */,
+				02DE0B152CE917FC003DEE33 /* SettingsInteractor.swift */,
+				02DE0B162CE917FC003DEE33 /* SettingsView.swift */,
+				02DE0B172CE917FC003DEE33 /* SettingsEntity.swift */,
+				02DE0B182CE917FC003DEE33 /* SettingsDependencies.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		02DE0B2F2CE91A3D003DEE33 /* ManageCards */ = {
+			isa = PBXGroup;
+			children = (
+				02DE0B212CE91A3A003DEE33 /* ManageCardsPresenter.swift */,
+				02DE0B222CE91A3A003DEE33 /* ManageCardsRouter.swift */,
+				02DE0B232CE91A3A003DEE33 /* ManageCardsContracts.swift */,
+				02DE0B242CE91A3A003DEE33 /* ManageCardsInteractor.swift */,
+				02DE0B252CE91A3A003DEE33 /* ManageCardsView.swift */,
+				02DE0B262CE91A3A003DEE33 /* ManageCardsEntity.swift */,
+				02DE0B272CE91A3A003DEE33 /* ManageCardsDependencies.swift */,
+			);
+			path = ManageCards;
+			sourceTree = "<group>";
+		};
+		02DEF9912CF4AF4200AD3908 /* CryptoList */ = {
+			isa = PBXGroup;
+			children = (
+				02DEF9832CF4AF3A00AD3908 /* CryptoListPresenter.swift */,
+				02DEF9842CF4AF3A00AD3908 /* CryptoListRouter.swift */,
+				02DEF9852CF4AF3A00AD3908 /* CryptoListContracts.swift */,
+				02DEF9862CF4AF3A00AD3908 /* CryptoListInteractor.swift */,
+				02DEF9872CF4AF3A00AD3908 /* CryptoListView.swift */,
+				02DEF9882CF4AF3A00AD3908 /* CryptoListEntity.swift */,
+				02DEF9892CF4AF3A00AD3908 /* CryptoListDependencies.swift */,
+			);
+			path = CryptoList;
+			sourceTree = "<group>";
+		};
+		02F083172D103B3C00120DF4 /* Helper+Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0235E25B2CE8A34C006B2DFD /* DataController.swift */,
+				02DEF9812CF48C2600AD3908 /* CustomChart.swift */,
+				0270A0672CFD9A2F0052EB29 /* ConstantText.swift */,
+				02F083152D103AED00120DF4 /* LocalizationService.swift */,
+			);
+			path = "Helper+Shared";
+			sourceTree = "<group>";
+		};
+		02F943182D073DCE00724498 /* Signin */ = {
+			isa = PBXGroup;
+			children = (
+				02F9430A2D073DC600724498 /* SigninPresenter.swift */,
+				02F9430B2D073DC600724498 /* SigninRouter.swift */,
+				02F9430C2D073DC600724498 /* SigninContracts.swift */,
+				02F9430D2D073DC600724498 /* SigninInteractor.swift */,
+				02F9430E2D073DC600724498 /* SigninView.swift */,
+				02F9430F2D073DC600724498 /* SigninEntity.swift */,
+				02F943102D073DC600724498 /* SigninDependencies.swift */,
+			);
+			path = Signin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0236F22D2CE60EA2006A9A7E /* CryptoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0236F2522CE60EA4006A9A7E /* Build configuration list for PBXNativeTarget "CryptoApp" */;
+			buildPhases = (
+				0236F22A2CE60EA2006A9A7E /* Sources */,
+				0236F22B2CE60EA2006A9A7E /* Frameworks */,
+				0236F22C2CE60EA2006A9A7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoApp;
+			productName = CryptoApp;
+			productReference = 0236F22E2CE60EA2006A9A7E /* CryptoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0236F23D2CE60EA4006A9A7E /* CryptoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0236F2552CE60EA4006A9A7E /* Build configuration list for PBXNativeTarget "CryptoAppTests" */;
+			buildPhases = (
+				0236F23A2CE60EA4006A9A7E /* Sources */,
+				0236F23B2CE60EA4006A9A7E /* Frameworks */,
+				0236F23C2CE60EA4006A9A7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0236F2402CE60EA4006A9A7E /* PBXTargetDependency */,
+			);
+			name = CryptoAppTests;
+			packageProductDependencies = (
+				02F083132D0FF53A00120DF4 /* Nimble */,
+			);
+			productName = CryptoAppTests;
+			productReference = 0236F23E2CE60EA4006A9A7E /* CryptoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0236F2472CE60EA4006A9A7E /* CryptoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0236F2582CE60EA4006A9A7E /* Build configuration list for PBXNativeTarget "CryptoAppUITests" */;
+			buildPhases = (
+				0236F2442CE60EA4006A9A7E /* Sources */,
+				0236F2452CE60EA4006A9A7E /* Frameworks */,
+				0236F2462CE60EA4006A9A7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0236F24A2CE60EA4006A9A7E /* PBXTargetDependency */,
+			);
+			name = CryptoAppUITests;
+			productName = CryptoAppUITests;
+			productReference = 0236F2482CE60EA4006A9A7E /* CryptoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0236F2262CE60EA2006A9A7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					0236F22D2CE60EA2006A9A7E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					0236F23D2CE60EA4006A9A7E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 0236F22D2CE60EA2006A9A7E;
+					};
+					0236F2472CE60EA4006A9A7E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 0236F22D2CE60EA2006A9A7E;
+					};
+				};
+			};
+			buildConfigurationList = 0236F2292CE60EA2006A9A7E /* Build configuration list for PBXProject "CryptoApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"ta-IN",
+				fr,
+				ar,
+			);
+			mainGroup = 0236F2252CE60EA2006A9A7E;
+			packageReferences = (
+				02F083122D0FF2F400120DF4 /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
+			productRefGroup = 0236F22F2CE60EA2006A9A7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0236F22D2CE60EA2006A9A7E /* CryptoApp */,
+				0236F23D2CE60EA4006A9A7E /* CryptoAppTests */,
+				0236F2472CE60EA4006A9A7E /* CryptoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0236F22C2CE60EA2006A9A7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0236F2392CE60EA4006A9A7E /* Preview Assets.xcassets in Resources */,
+				0270A0642CFD93DC0052EB29 /* Localizable.strings in Resources */,
+				0236F2362CE60EA4006A9A7E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0236F23C2CE60EA4006A9A7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0236F2462CE60EA4006A9A7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0236F22A2CE60EA2006A9A7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				027BF5472CF43345009813D9 /* NetworkManager.swift in Sources */,
+				0236F2802CE64730006A9A7E /* String.swift in Sources */,
+				0236F2622CE61504006A9A7E /* WelcomePresenter.swift in Sources */,
+				0236F2632CE61504006A9A7E /* WelcomeRouter.swift in Sources */,
+				027BF52E2CF42FC1009813D9 /* PortfolioInteractor.swift in Sources */,
+				0236F2642CE61504006A9A7E /* WelcomeContracts.swift in Sources */,
+				0236F26B2CE61DB7006A9A7E /* Color.swift in Sources */,
+				0236F2652CE61504006A9A7E /* WelcomeInteractor.swift in Sources */,
+				02DE0B192CE917FC003DEE33 /* SettingsPresenter.swift in Sources */,
+				02DE0B1A2CE917FC003DEE33 /* SettingsRouter.swift in Sources */,
+				02DE0B1B2CE917FC003DEE33 /* SettingsContracts.swift in Sources */,
+				02DE0B1C2CE917FC003DEE33 /* SettingsInteractor.swift in Sources */,
+				02DE0B1D2CE917FC003DEE33 /* SettingsView.swift in Sources */,
+				027BF5442CF43345009813D9 /* Decoders.swift in Sources */,
+				02DE0B1E2CE917FC003DEE33 /* SettingsEntity.swift in Sources */,
+				0270A0682CFD9A2F0052EB29 /* ConstantText.swift in Sources */,
+				02DE0B1F2CE917FC003DEE33 /* SettingsDependencies.swift in Sources */,
+				0236F2662CE61504006A9A7E /* WelcomeView.swift in Sources */,
+				0242EFA32CEB611F00F36A4B /* Helper-Wraper.swift in Sources */,
+				027BF5402CF43345009813D9 /* NetworkManagerProtocol.swift in Sources */,
+				027BF52D2CF42FC1009813D9 /* PortfolioEntity.swift in Sources */,
+				02BAF2322D08204600C308D3 /* ProgressView.swift in Sources */,
+				02DE0B072CE914AA003DEE33 /* TabViewPresenter.swift in Sources */,
+				02DE0B082CE914AA003DEE33 /* TabViewRouter.swift in Sources */,
+				027BF5312CF42FC1009813D9 /* PortfolioView.swift in Sources */,
+				0283949A2D070F37009D5802 /* CustomViews.swift in Sources */,
+				02F943112D073DC600724498 /* SigninPresenter.swift in Sources */,
+				02F943122D073DC600724498 /* SigninRouter.swift in Sources */,
+				02F943132D073DC600724498 /* SigninContracts.swift in Sources */,
+				02F943142D073DC600724498 /* SigninInteractor.swift in Sources */,
+				02F943152D073DC600724498 /* SigninView.swift in Sources */,
+				02F943162D073DC600724498 /* SigninEntity.swift in Sources */,
+				02F943172D073DC600724498 /* SigninDependencies.swift in Sources */,
+				02DE0B092CE914AA003DEE33 /* TabViewContracts.swift in Sources */,
+				02DE0B282CE91A3A003DEE33 /* ManageCardsPresenter.swift in Sources */,
+				02664A112CEA258200DD8E2D /* MarketPresenter.swift in Sources */,
+				02664A122CEA258200DD8E2D /* MarketRouter.swift in Sources */,
+				02664A132CEA258200DD8E2D /* MarketContracts.swift in Sources */,
+				027BF5302CF42FC1009813D9 /* PortfolioRouter.swift in Sources */,
+				02664A142CEA258200DD8E2D /* MarketInteractor.swift in Sources */,
+				02664A152CEA258200DD8E2D /* MarketView.swift in Sources */,
+				027BF5432CF43345009813D9 /* URLRouter.swift in Sources */,
+				02EB0E0E2CEB05480015C75C /* LineChartView.swift in Sources */,
+				02664A162CEA258200DD8E2D /* MarketEntity.swift in Sources */,
+				02664A172CEA258200DD8E2D /* MarketDependencies.swift in Sources */,
+				027BF52B2CF42FC1009813D9 /* PortfolioContracts.swift in Sources */,
+				02DE0B292CE91A3A003DEE33 /* ManageCardsRouter.swift in Sources */,
+				02C275972CF5AA780032DB60 /* PieChartView.swift in Sources */,
+				02DE0B2A2CE91A3A003DEE33 /* ManageCardsContracts.swift in Sources */,
+				02DE0B2B2CE91A3A003DEE33 /* ManageCardsInteractor.swift in Sources */,
+				02DE0B2C2CE91A3A003DEE33 /* ManageCardsView.swift in Sources */,
+				02DE0B2D2CE91A3A003DEE33 /* ManageCardsEntity.swift in Sources */,
+				026691512CECE23700925EC4 /* CustomModifier.swift in Sources */,
+				02DE0B2E2CE91A3A003DEE33 /* ManageCardsDependencies.swift in Sources */,
+				02C275952CF5A8B60032DB60 /* BarchartView.swift in Sources */,
+				02DE0B0A2CE914AA003DEE33 /* TabViewInteractor.swift in Sources */,
+				02DE0B0B2CE914AA003DEE33 /* TabViewView.swift in Sources */,
+				02DE0B0C2CE914AA003DEE33 /* TabViewEntity.swift in Sources */,
+				02DE0B0D2CE914AA003DEE33 /* TabViewDependencies.swift in Sources */,
+				02DEF98A2CF4AF3A00AD3908 /* CryptoListPresenter.swift in Sources */,
+				02DEF98B2CF4AF3A00AD3908 /* CryptoListRouter.swift in Sources */,
+				02DEF98C2CF4AF3A00AD3908 /* CryptoListContracts.swift in Sources */,
+				02DEF98D2CF4AF3A00AD3908 /* CryptoListInteractor.swift in Sources */,
+				02DEF98E2CF4AF3A00AD3908 /* CryptoListView.swift in Sources */,
+				02DEF98F2CF4AF3A00AD3908 /* CryptoListEntity.swift in Sources */,
+				02DEF9902CF4AF3A00AD3908 /* CryptoListDependencies.swift in Sources */,
+				027BF52C2CF42FC1009813D9 /* PortfolioDependencies.swift in Sources */,
+				0235E25A2CE8A2D0006B2DFD /* CardDetails.xcdatamodeld in Sources */,
+				0270A0612CFD850F0052EB29 /* VideoPlayer.swift in Sources */,
+				027BF5412CF43345009813D9 /* Constants.swift in Sources */,
+				027BF52F2CF42FC1009813D9 /* PortfolioPresenter.swift in Sources */,
+				0235E25C2CE8A34C006B2DFD /* DataController.swift in Sources */,
+				027BF5422CF43345009813D9 /* RequestMethod.swift in Sources */,
+				0266914F2CECE18A00925EC4 /* Encryption.swift in Sources */,
+				0222037E2CF9D68A00A2693E /* CurrencyConverterPresenter.swift in Sources */,
+				0222037F2CF9D68A00A2693E /* CurrencyConverterRouter.swift in Sources */,
+				022203802CF9D68A00A2693E /* CurrencyConverterContracts.swift in Sources */,
+				02EA33462D00BB430042948D /* ThemeManager.swift in Sources */,
+				022203812CF9D68A00A2693E /* CurrencyConverterInteractor.swift in Sources */,
+				022203822CF9D68A00A2693E /* CurrencyConverterView.swift in Sources */,
+				022203832CF9D68A00A2693E /* CurrencyConverterEntity.swift in Sources */,
+				022203842CF9D68A00A2693E /* CurrencyConverterDependencies.swift in Sources */,
+				0236F2672CE61504006A9A7E /* WelcomeEntity.swift in Sources */,
+				0236F2682CE61504006A9A7E /* WelcomeDependencies.swift in Sources */,
+				0236F2342CE60EA2006A9A7E /* ContentView.swift in Sources */,
+				0236F2322CE60EA2006A9A7E /* CryptoAppApp.swift in Sources */,
+				02F083162D103AED00120DF4 /* LocalizationService.swift in Sources */,
+				022203872CF9D6BD00A2693E /* DropDownView.swift in Sources */,
+				02DEF9822CF48C2600AD3908 /* CustomChart.swift in Sources */,
+				0236F27E2CE6422E006A9A7E /* ValidationEnums.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0236F23A2CE60EA4006A9A7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F9431C2D077BEC00724498 /* SignInPresenterTests.swift in Sources */,
+				0236F2432CE60EA4006A9A7E /* CryptoAppTests.swift in Sources */,
+				02F9431A2D077BCE00724498 /* SignInInteractorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0236F2442CE60EA4006A9A7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0236F24D2CE60EA4006A9A7E /* CryptoAppUITests.swift in Sources */,
+				0236F24F2CE60EA4006A9A7E /* CryptoAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0236F2402CE60EA4006A9A7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0236F22D2CE60EA2006A9A7E /* CryptoApp */;
+			targetProxy = 0236F23F2CE60EA4006A9A7E /* PBXContainerItemProxy */;
+		};
+		0236F24A2CE60EA4006A9A7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0236F22D2CE60EA2006A9A7E /* CryptoApp */;
+			targetProxy = 0236F2492CE60EA4006A9A7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0270A0622CFD93DC0052EB29 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0270A0632CFD93DC0052EB29 /* en */,
+				0270A0652CFD93F00052EB29 /* fr */,
+				0270A0662CFD93F50052EB29 /* ta-IN */,
+				0270A0692CFDB38F0052EB29 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0236F2502CE60EA4006A9A7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0236F2512CE60EA4006A9A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0236F2532CE60EA4006A9A7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CryptoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 3D4SYZ296M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CryptoApp;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crypto.sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0236F2542CE60EA4006A9A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CryptoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 3D4SYZ296M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CryptoApp;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crypto.sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0236F2562CE60EA4006A9A7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QRA7572M73;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Balaji.CryptoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CryptoApp";
+			};
+			name = Debug;
+		};
+		0236F2572CE60EA4006A9A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QRA7572M73;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Balaji.CryptoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CryptoApp";
+			};
+			name = Release;
+		};
+		0236F2592CE60EA4006A9A7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Balaji.CryptoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptoApp;
+			};
+			name = Debug;
+		};
+		0236F25A2CE60EA4006A9A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Balaji.CryptoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0236F2292CE60EA2006A9A7E /* Build configuration list for PBXProject "CryptoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0236F2502CE60EA4006A9A7E /* Debug */,
+				0236F2512CE60EA4006A9A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0236F2522CE60EA4006A9A7E /* Build configuration list for PBXNativeTarget "CryptoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0236F2532CE60EA4006A9A7E /* Debug */,
+				0236F2542CE60EA4006A9A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0236F2552CE60EA4006A9A7E /* Build configuration list for PBXNativeTarget "CryptoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0236F2562CE60EA4006A9A7E /* Debug */,
+				0236F2572CE60EA4006A9A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0236F2582CE60EA4006A9A7E /* Build configuration list for PBXNativeTarget "CryptoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0236F2592CE60EA4006A9A7E /* Debug */,
+				0236F25A2CE60EA4006A9A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02F083122D0FF2F400120DF4 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02F083132D0FF53A00120DF4 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02F083122D0FF2F400120DF4 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		0235E2582CE8A2D0006B2DFD /* CardDetails.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0235E2592CE8A2D0006B2DFD /* CardDetails.xcdatamodel */,
+			);
+			currentVersion = 0235E2592CE8A2D0006B2DFD /* CardDetails.xcdatamodel */;
+			name = CardDetails.xcdatamodeld;
+			path = /Users/Balaji/Project/CryptoApp/CardDetails.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0236F2262CE60EA2006A9A7E /* Project object */;
+}
