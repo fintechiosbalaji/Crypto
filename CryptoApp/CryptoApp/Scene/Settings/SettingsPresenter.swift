@@ -24,6 +24,5 @@ final class SettingsPresenter: SettingsPresenterProtocol, ObservableObject {
     
     func loadSettings() {
         settingsSections = interactor.loadSettingsdata()
-        interactor.addLanguageObserver()
     }
 }

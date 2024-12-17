@@ -8,6 +8,26 @@
 
 import Foundation
 
+// Language Model
+struct LanguageModel {
+    let language: Language
+}
+
+enum Language: String, CaseIterable {
+    case english_us = "en"
+    case french = "fr"
+    case arabic = "ar"
+    
+    var displayName: String {
+        switch self {
+        case .english_us: return "English (US)"
+        case .french: return "French"
+     //   case .tamil: return "Tamil"
+        case .arabic: return "Arabic"
+        }
+    }
+}
+
 struct SettingsSection: Identifiable {
     let id = UUID()
     let title: String
@@ -39,6 +59,49 @@ struct Video: Identifiable {
     let url: String
     let description: String
 }
+
+let mockCryptoVideos: [Video] = [
+    Video(title: "Introduction to Blockchain",
+          url: "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8",
+          description: "Learn the basics of blockchain technology and how it works."),
+    
+    Video(title: "How Bitcoin Works",
+          url: "https://youtu.be/ZyBpG8EEllc?si=PLUtORj3cE-ljCjV",
+          description: "Understand the fundamentals of Bitcoin and its decentralized nature."),
+    
+    Video(title: "Ethereum and Smart Contracts",
+          url: "https://example.com/ethereum-smart-contracts",
+          description: "Explore Ethereum's blockchain and how smart contracts are transforming industries."),
+    
+    Video(title: "What is Cryptocurrency Mining?",
+          url: "https://example.com/crypto-mining",
+          description: "A deep dive into how cryptocurrency mining works and its role in the blockchain network."),
+    
+    Video(title: "Decentralized Finance (DeFi) Explained",
+          url: "https://example.com/defi-explained",
+          description: "An overview of Decentralized Finance (DeFi) and its impact on the financial system."),
+    
+    Video(title: "Understanding NFTs (Non-Fungible Tokens)",
+          url: "https://example.com/nfts-explained",
+          description: "Learn what NFTs are, how they work, and their role in the digital world."),
+    
+    Video(title: "Crypto Trading Strategies for Beginners",
+          url: "https://example.com/crypto-trading-beginners",
+          description: "Tips and strategies for beginners looking to trade cryptocurrencies."),
+    
+    Video(title: "The Future of Web 3.0",
+          url: "https://example.com/web3-future",
+          description: "Explore how Web 3.0 and blockchain technologies will revolutionize the internet."),
+    
+    Video(title: "How to Secure Your Crypto Wallet",
+          url: "https://example.com/secure-crypto-wallet",
+          description: "Best practices for keeping your cryptocurrency wallet safe and secure."),
+    
+    Video(title: "Top 5 Altcoins to Watch This Year",
+          url: "https://example.com/top-altcoins-2024",
+          description: "A list of promising altcoins with high growth potential.")
+]
+
 
 let mockSettings: [SettingsSection] = [
     SettingsSection(title: LocalizationKeys.Settings.support, items: [

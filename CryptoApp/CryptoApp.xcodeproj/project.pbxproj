@@ -49,6 +49,7 @@
 		0270A0612CFD850F0052EB29 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270A0602CFD850F0052EB29 /* VideoPlayer.swift */; };
 		0270A0642CFD93DC0052EB29 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0270A0622CFD93DC0052EB29 /* Localizable.strings */; };
 		0270A0682CFD9A2F0052EB29 /* ConstantText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270A0672CFD9A2F0052EB29 /* ConstantText.swift */; };
+		0277217C2D11DFBA008A9E17 /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0277217B2D11DFBA008A9E17 /* YouTubePlayerKit */; };
 		027BF52B2CF42FC1009813D9 /* PortfolioContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BF5232CF42FC1009813D9 /* PortfolioContracts.swift */; };
 		027BF52C2CF42FC1009813D9 /* PortfolioDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BF5242CF42FC1009813D9 /* PortfolioDependencies.swift */; };
 		027BF52D2CF42FC1009813D9 /* PortfolioEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BF5252CF42FC1009813D9 /* PortfolioEntity.swift */; };
@@ -242,6 +243,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0277217C2D11DFBA008A9E17 /* YouTubePlayerKit in Frameworks */,
 				026E388A2D104F3800569195 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,6 +593,7 @@
 			name = CryptoApp;
 			packageProductDependencies = (
 				026E38892D104F3800569195 /* Alamofire */,
+				0277217B2D11DFBA008A9E17 /* YouTubePlayerKit */,
 			);
 			productName = CryptoApp;
 			productReference = 0236F22E2CE60EA2006A9A7E /* CryptoApp.app */;
@@ -673,6 +676,7 @@
 			packageReferences = (
 				02F083122D0FF2F400120DF4 /* XCRemoteSwiftPackageReference "Nimble" */,
 				026E38882D104F0E00569195 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				0277217A2D11DF57008A9E17 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */,
 			);
 			productRefGroup = 0236F22F2CE60EA2006A9A7E /* Products */;
 			projectDirPath = "";
@@ -1197,6 +1201,14 @@
 				minimumVersion = 5.10.2;
 			};
 		};
+		0277217A2D11DF57008A9E17 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SvenTiigi/YouTubePlayerKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
 		02F083122D0FF2F400120DF4 /* XCRemoteSwiftPackageReference "Nimble" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Quick/Nimble.git";
@@ -1212,6 +1224,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 026E38882D104F0E00569195 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		0277217B2D11DFBA008A9E17 /* YouTubePlayerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0277217A2D11DF57008A9E17 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */;
+			productName = YouTubePlayerKit;
 		};
 		02F083132D0FF53A00120DF4 /* Nimble */ = {
 			isa = XCSwiftPackageProductDependency;

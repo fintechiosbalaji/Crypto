@@ -15,7 +15,7 @@ struct CryptoAppApp: App {
     
     var body: some Scene {
         WindowGroup {
-           // CurrencyConverterRouter.composeView()
+            // SettingsRouter.composeView()
             let router = WelcomeRouter()
             let interactor = WelcomeInteractor()
             let presenter = WelcomePresenter(interactor: interactor, router: router)

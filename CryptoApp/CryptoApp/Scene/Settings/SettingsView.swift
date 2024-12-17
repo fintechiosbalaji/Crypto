@@ -8,16 +8,13 @@
 
 import SwiftUI
 import AVKit
-
-extension Notification.Name {
-    static let themeChanged = Notification.Name("themeChanged")
-    static let languageChanged = Notification.Name("languageChanged")
-}
+import YouTubePlayerKit
 
 struct SettingsView: View, SettingsViewProtocol {
     @ObservedObject
     private var presenter: SettingsPresenter
     @State private var showWebView = false
+    @State private var isHelpCenter = false
     @State private var webViewURL: String?
     
     @AppStorage("theme")
@@ -81,6 +78,9 @@ struct SettingsView: View, SettingsViewProtocol {
                         .foregroundColor(.red)
                 }
             }
+            .sheet(isPresented: $isHelpCenter) {
+                VideoListView(videos: mockCryptoVideos)
+            }
             .navigationBarBackButtonHidden(true)
         }
         .modifier(DarkModeViewModifier())
@@ -103,12 +103,90 @@ struct SettingsView: View, SettingsViewProtocol {
         .foregroundColor(isDarkMode ? .orange : .gray)
         .onTapGesture {
             print("Tapped on: \(data.text)")
-            if data.text == "Logout" {
+            
+            switch (data.text) {
+            case LocalizationKeys.Settings.logout:
                 print("Logout triggered from settingsRow")
-            } else if let url = data.url, !url.isEmpty {
-                print("Opening URL: \(url)")
-                webViewURL = url
-                showWebView = true
+                break;
+            case LocalizationKeys.Settings.privacyPolicy
+                , LocalizationKeys.Settings.termsAndConditions:
+                if let url = data.url, !url.isEmpty {
+                    print("Opening URL: \(url)")
+                    webViewURL = url
+                    showWebView = true
+                }
+                break;
+            case LocalizationKeys.Settings.helpCenter:
+                isHelpCenter = true
+                
+                break;
+            default:
+                break;
+            }
+        }
+    }
+}
+
+struct VideoListView: View {
+    let videos: [Video]
+    @Environment(\.dismiss) private var dismiss
+    @State private var selectedVideo: Video?
+    
+    var body: some View {
+        VStack {
+            CloseButtonView(title: "Crypto") {
+                dismiss()
+            }
+            .padding()
+            // Video List
+            List {
+                ForEach(videos) { video in
+                    ZStack {
+                        HStack {
+                            Image(systemName: "video")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                                .padding()
+                            VStack(alignment: .leading) {
+                                Text(video.title)
+                                    .font(.headline)
+                                Text(video.description)
+                                    .font(.subheadline)
+                                    .foregroundColor(.gray)
+                            }
+                        }
+                        .frame(maxWidth: .infinity, maxHeight: 100)
+                        .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(.gray, lineWidth: 1)
+                        )
+                    }
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        selectedVideo = video
+                    }
+                }
+                .sheet(item: $selectedVideo) { video in
+                    if video.url.contains("youtube.com") || video.url.contains("youtu.be") {
+                        let youTubePlayer: YouTubePlayer = YouTubePlayer(source: .url(video.url))
+                        YouTubePlayerView(youTubePlayer) { state in
+                            switch state {
+                            case .idle:
+                                ProgressView()
+                            case .ready:
+                                EmptyView()
+                            case .error(let error):
+                                Text(verbatim: "YouTube player couldn't be loaded \n \(error)")
+                            }
+                        }
+                    } else {
+                        let player = AVPlayer(url: URL(string: video.url)!)
+                        VideoPlayer(player: player)
+                            .onAppear { player.play() }
+                            .onDisappear { player.pause() }
+                    }
+                }
             }
         }
     }
@@ -138,36 +216,27 @@ struct LoadingWebView: View {
     }
 }
 
-struct VideoListView: View {
-    let videos: [Video]
+struct CloseButtonView: View {
+    let title: String
+    let onClose: () -> Void
     
     var body: some View {
-        List(videos) { video in
-            NavigationLink(destination: VideoPlayerView(url: URL(string: video.url)!, autoPlay: true)) {
-                HStack {
-                    Image(systemName: "video")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                        .padding()
-                    VStack(alignment: .leading) {
-                        Text(video.title)
-                            .font(.headline)
-                        Text(video.description)
-                            .font(.subheadline)
-                            .foregroundColor(.gray)
-                    }
-                }
+        HStack {
+            Spacer()
+            Text("Crypto")
+                .font(.title2)
+                .fontWeight(.semibold)
+            
+            Spacer()
+            Button(action: onClose) {
+                Image(systemName: "xmark.circle.fill")
+                    .resizable()
+                    .frame(width: 24, height: 24) // Adjust size as needed
+                    .foregroundColor(.red)
+                    .accessibilityLabel("Close")
             }
         }
-        .navigationTitle("Help Videos")
-    }
-}
-
-struct VideoListView_Previews: PreviewProvider {
-    static var previews: some View {
-        VideoListView(videos: [
-            Video(title: "Understanding Crypto Basics", url: "https://example.com/video1", description: "Learn the basics of cryptocurrency."),
-            Video(title: "How to Secure Your Wallet", url: "https://example.com/video2", description: "Tips for securing your crypto wallet."),
-        ])
+        .padding(.horizontal)
+        .padding(.vertical, 8)
     }
 }
