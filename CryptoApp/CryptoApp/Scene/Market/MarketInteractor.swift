@@ -30,7 +30,7 @@ final class MarketInteractor: MarketInteractorProtocol {
 //            .eraseToAnyPublisher()
 //    }
     
-    func fetchMarketData() -> AnyPublisher<Result<[TestCrypto], NetworkError>, Never> {
+    func fetchMarketData() -> AnyPublisher<Result<[TestCrypto], HttpNetworkError>, Never> {
         return self.service.get(type: [TestCrypto].self,
                                 router: .fetchCrypto,
                                 parameters: nil,

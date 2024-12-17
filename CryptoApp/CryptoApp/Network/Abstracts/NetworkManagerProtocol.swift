@@ -17,7 +17,7 @@ protocol NetworkManagerProtocol  {
         headers: [String: String]?,
         count: Int,
         method: RequestMethod
-    ) -> AnyPublisher<Result<T, NetworkError>, Never> where T: Decodable
+    ) -> AnyPublisher<Result<T, HttpNetworkError>, Never> where T: Decodable
     
     func buildRequest(
         router: URLRouter,

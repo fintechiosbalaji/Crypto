@@ -44,6 +44,8 @@
 		02664A172CEA258200DD8E2D /* MarketDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02664A102CEA258200DD8E2D /* MarketDependencies.swift */; };
 		0266914F2CECE18A00925EC4 /* Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266914E2CECE18A00925EC4 /* Encryption.swift */; };
 		026691512CECE23700925EC4 /* CustomModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026691502CECE23700925EC4 /* CustomModifier.swift */; };
+		026E38872D104EBF00569195 /* AlamofireNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E38862D104EBF00569195 /* AlamofireNetworkManager.swift */; };
+		026E388A2D104F3800569195 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 026E38892D104F3800569195 /* Alamofire */; };
 		0270A0612CFD850F0052EB29 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270A0602CFD850F0052EB29 /* VideoPlayer.swift */; };
 		0270A0642CFD93DC0052EB29 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0270A0622CFD93DC0052EB29 /* Localizable.strings */; };
 		0270A0682CFD9A2F0052EB29 /* ConstantText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270A0672CFD9A2F0052EB29 /* ConstantText.swift */; };
@@ -61,6 +63,7 @@
 		027BF5442CF43345009813D9 /* Decoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BF5382CF43345009813D9 /* Decoders.swift */; };
 		027BF5472CF43345009813D9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BF53D2CF43345009813D9 /* NetworkManager.swift */; };
 		0283949A2D070F37009D5802 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028394992D070F37009D5802 /* CustomViews.swift */; };
+		02B476892D115B4200398763 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B476882D115B4200398763 /* SwiftUIView.swift */; };
 		02BAF2322D08204600C308D3 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BAF2312D08204600C308D3 /* ProgressView.swift */; };
 		02C275952CF5A8B60032DB60 /* BarchartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C275942CF5A8B60032DB60 /* BarchartView.swift */; };
 		02C275972CF5AA780032DB60 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C275962CF5AA770032DB60 /* PieChartView.swift */; };
@@ -166,6 +169,7 @@
 		02664A102CEA258200DD8E2D /* MarketDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDependencies.swift; sourceTree = "<group>"; };
 		0266914E2CECE18A00925EC4 /* Encryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encryption.swift; sourceTree = "<group>"; };
 		026691502CECE23700925EC4 /* CustomModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModifier.swift; sourceTree = "<group>"; };
+		026E38862D104EBF00569195 /* AlamofireNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkManager.swift; sourceTree = "<group>"; };
 		0270A0602CFD850F0052EB29 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 		0270A0632CFD93DC0052EB29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0270A0652CFD93F00052EB29 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -186,6 +190,7 @@
 		027BF5382CF43345009813D9 /* Decoders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decoders.swift; sourceTree = "<group>"; };
 		027BF53D2CF43345009813D9 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		028394992D070F37009D5802 /* CustomViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
+		02B476882D115B4200398763 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		02BAF2312D08204600C308D3 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		02C275942CF5A8B60032DB60 /* BarchartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarchartView.swift; sourceTree = "<group>"; };
 		02C275962CF5AA770032DB60 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
@@ -237,6 +242,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026E388A2D104F3800569195 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +315,7 @@
 				0236F2352CE60EA4006A9A7E /* Assets.xcassets */,
 				0236F2372CE60EA4006A9A7E /* Preview Content */,
 				02F083172D103B3C00120DF4 /* Helper+Shared */,
+				02B476882D115B4200398763 /* SwiftUIView.swift */,
 			);
 			path = CryptoApp;
 			sourceTree = "<group>";
@@ -456,6 +463,7 @@
 			isa = PBXGroup;
 			children = (
 				027BF53D2CF43345009813D9 /* NetworkManager.swift */,
+				026E38862D104EBF00569195 /* AlamofireNetworkManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -581,6 +589,9 @@
 			dependencies = (
 			);
 			name = CryptoApp;
+			packageProductDependencies = (
+				026E38892D104F3800569195 /* Alamofire */,
+			);
 			productName = CryptoApp;
 			productReference = 0236F22E2CE60EA2006A9A7E /* CryptoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -661,6 +672,7 @@
 			mainGroup = 0236F2252CE60EA2006A9A7E;
 			packageReferences = (
 				02F083122D0FF2F400120DF4 /* XCRemoteSwiftPackageReference "Nimble" */,
+				026E38882D104F0E00569195 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 0236F22F2CE60EA2006A9A7E /* Products */;
 			projectDirPath = "";
@@ -705,11 +717,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026E38872D104EBF00569195 /* AlamofireNetworkManager.swift in Sources */,
 				027BF5472CF43345009813D9 /* NetworkManager.swift in Sources */,
 				0236F2802CE64730006A9A7E /* String.swift in Sources */,
 				0236F2622CE61504006A9A7E /* WelcomePresenter.swift in Sources */,
 				0236F2632CE61504006A9A7E /* WelcomeRouter.swift in Sources */,
 				027BF52E2CF42FC1009813D9 /* PortfolioInteractor.swift in Sources */,
+				02B476892D115B4200398763 /* SwiftUIView.swift in Sources */,
 				0236F2642CE61504006A9A7E /* WelcomeContracts.swift in Sources */,
 				0236F26B2CE61DB7006A9A7E /* Color.swift in Sources */,
 				0236F2652CE61504006A9A7E /* WelcomeInteractor.swift in Sources */,
@@ -1175,6 +1189,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		026E38882D104F0E00569195 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
 		02F083122D0FF2F400120DF4 /* XCRemoteSwiftPackageReference "Nimble" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Quick/Nimble.git";
@@ -1186,6 +1208,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		026E38892D104F3800569195 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 026E38882D104F0E00569195 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		02F083132D0FF53A00120DF4 /* Nimble */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 02F083122D0FF2F400120DF4 /* XCRemoteSwiftPackageReference "Nimble" */;

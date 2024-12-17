@@ -19,7 +19,7 @@ final class CryptoListInteractor: CryptoListInteractorProtocol {
         self.service = service
     }
     
-    func fetchData() -> AnyPublisher<Result<[TestCrypto], NetworkError>, Never> {
+    func fetchData() -> AnyPublisher<Result<[TestCrypto], HttpNetworkError>, Never> {
         return self.service.get(type: [TestCrypto].self,
                                 router: .fetchCrypto,
                                 parameters: nil,

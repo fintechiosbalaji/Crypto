@@ -25,7 +25,7 @@ protocol CryptoListPresenterProtocol {
 // MARK: - Interactor Protocol
 
 protocol CryptoListInteractorProtocol {
-    func fetchData() -> AnyPublisher<Result<[TestCrypto], NetworkError>, Never>
+    func fetchData() -> AnyPublisher<Result<[TestCrypto], HttpNetworkError>, Never>
 }
 
 // MARK: - Router Protocol

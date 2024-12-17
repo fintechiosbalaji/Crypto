@@ -6,7 +6,7 @@
 import Foundation
 import Combine
 
-enum NetworkError: Error {
+enum HttpNetworkError: Error {
     case invalidURL
     case serverError(statusCode: Int)
     case decodingError
@@ -22,7 +22,7 @@ final class NetworkManager: NetworkManagerProtocol {
         headers: [String: String]? = nil,
         count: Int,
         method: RequestMethod
-    ) -> AnyPublisher<Result<T, NetworkError>, Never> where T: Decodable {
+    ) -> AnyPublisher<Result<T, HttpNetworkError>, Never> where T: Decodable {
         
         // Build the URL request
         if let request = buildRequest(router: router, parameters: parameters, headers: headers, count: count, method: method) {
@@ -41,9 +41,9 @@ final class NetworkManager: NetworkManagerProtocol {
                 }
                 .decode(type: T.self, decoder: Decoders.Decoder)
                 .map { Result.success($0) } // Success case
-                .catch { error -> Just<Result<T, NetworkError>> in
+                .catch { error -> Just<Result<T, HttpNetworkError>> in
                     // Handle errors, map to network error
-                    let networkError: NetworkError
+                    let networkError: HttpNetworkError
                     if let urlError = error as? URLError {
                         networkError = .unknownError // Handle URL errors here
                     } else if let decodingError = error as? DecodingError {
@@ -55,7 +55,7 @@ final class NetworkManager: NetworkManagerProtocol {
                 }
                 .eraseToAnyPublisher()
         }
-        return Just(Result.failure(NetworkError.invalidURL)).eraseToAnyPublisher()
+        return Just(Result.failure(HttpNetworkError.invalidURL)).eraseToAnyPublisher()
     }
     
     func buildRequest(

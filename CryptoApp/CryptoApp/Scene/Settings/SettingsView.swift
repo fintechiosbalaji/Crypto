@@ -65,6 +65,7 @@ struct SettingsView: View, SettingsViewProtocol {
                     }
                 }
             }
+            .padding(.bottom, 20)
             .listStyle(.insetGrouped)
             .primaryBackground()
             .scrollContentBackground(.hidden)

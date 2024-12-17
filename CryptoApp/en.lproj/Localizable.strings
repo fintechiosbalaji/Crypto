@@ -31,7 +31,7 @@
 
 "Support" = "Support";
 "General Settings" = "General Settings";
-"Logout" = "Logout";
+
 
 "Credits" = "Credits";
 "Contact Support" = "Contact Support";
@@ -40,6 +40,9 @@
 "Help Center" = "Help Center";
 "Security" = "Security";
 "Logout" = "Logout";
+"Theme Settings" = "Theme Settings";
+"Light" = "Light";
+"Dark" = "Dark";
 
 "Card Number" = "Card Number";
 "Done"="Done";
