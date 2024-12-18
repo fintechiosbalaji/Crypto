@@ -74,7 +74,7 @@ struct CryptoValueModel: Identifiable, Codable {
     }
 }
 
-struct CryptoGraphData: Identifiable, Codable {
+struct CryptoGraphData: Identifiable, Codable  {
     let id = UUID()
     let date: String
     let value: Double

@@ -7,6 +7,7 @@
 
 import XCTest
 import Combine
+import Nimble
 @testable import CryptoApp
 
 final class SignInPresenterTests: XCTestCase {
@@ -41,7 +42,8 @@ final class SignInPresenterTests: XCTestCase {
         let presenter = createPresenter(email: "test@example.com", password: "Valid@123")
         presenter.$isValid
             .sink { isValid in
-                XCTAssertTrue(isValid)
+               // XCTAssertTrue(isValid)
+                expect(isValid).to(beTrue())
             }
             .store(in: &cancellables)
     }

@@ -58,6 +58,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "0236F22D2CE60EA2006A9A7E"
+            BuildableName = "CryptoApp.app"
+            BlueprintName = "CryptoApp"
+            ReferencedContainer = "container:CryptoApp.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -9,6 +9,7 @@ import XCTest
 @testable import CryptoApp
 import Nimble
 
+
 final class SignInInteractorTests: XCTestCase {
     
     var interactor: SigninInteractor!

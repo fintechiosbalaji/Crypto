@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -46,7 +46,6 @@
 		026691512CECE23700925EC4 /* CustomModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026691502CECE23700925EC4 /* CustomModifier.swift */; };
 		026E38872D104EBF00569195 /* AlamofireNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E38862D104EBF00569195 /* AlamofireNetworkManager.swift */; };
 		026E388A2D104F3800569195 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 026E38892D104F3800569195 /* Alamofire */; };
-		0270A0612CFD850F0052EB29 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270A0602CFD850F0052EB29 /* VideoPlayer.swift */; };
 		0270A0642CFD93DC0052EB29 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0270A0622CFD93DC0052EB29 /* Localizable.strings */; };
 		0270A0682CFD9A2F0052EB29 /* ConstantText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270A0672CFD9A2F0052EB29 /* ConstantText.swift */; };
 		0277217C2D11DFBA008A9E17 /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0277217B2D11DFBA008A9E17 /* YouTubePlayerKit */; };
@@ -171,7 +170,6 @@
 		0266914E2CECE18A00925EC4 /* Encryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encryption.swift; sourceTree = "<group>"; };
 		026691502CECE23700925EC4 /* CustomModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModifier.swift; sourceTree = "<group>"; };
 		026E38862D104EBF00569195 /* AlamofireNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkManager.swift; sourceTree = "<group>"; };
-		0270A0602CFD850F0052EB29 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 		0270A0632CFD93DC0052EB29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0270A0652CFD93F00052EB29 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0270A0662CFD93F50052EB29 /* ta-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ta-IN"; path = "ta-IN.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -237,6 +235,10 @@
 		02F943192D077BCE00724498 /* SignInInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractorTests.swift; sourceTree = "<group>"; };
 		02F9431B2D077BEC00724498 /* SignInPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0299B9A12D131C2D006A48B7 /* PortfolioTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = PortfolioTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0236F22B2CE60EA2006A9A7E /* Frameworks */ = {
@@ -309,7 +311,6 @@
 				02C275932CF5A8970032DB60 /* HelperView */,
 				0236F2312CE60EA2006A9A7E /* CryptoAppApp.swift */,
 				0236F2332CE60EA2006A9A7E /* ContentView.swift */,
-				0236F27D2CE6422E006A9A7E /* ValidationEnums.swift */,
 				027BF53F2CF43345009813D9 /* Network */,
 				026691522CECE52C00925EC4 /* Modifier */,
 				0236F26C2CE61DC7006A9A7E /* Extension */,
@@ -335,6 +336,7 @@
 			children = (
 				0236F2422CE60EA4006A9A7E /* CryptoAppTests.swift */,
 				0242EFA12CEB573E00F36A4B /* SignInTests */,
+				0299B9A12D131C2D006A48B7 /* PortfolioTests */,
 			);
 			path = CryptoAppTests;
 			sourceTree = "<group>";
@@ -487,7 +489,6 @@
 				028394992D070F37009D5802 /* CustomViews.swift */,
 				02C275942CF5A8B60032DB60 /* BarchartView.swift */,
 				02C275962CF5AA770032DB60 /* PieChartView.swift */,
-				0270A0602CFD850F0052EB29 /* VideoPlayer.swift */,
 				02EA33452D00BB430042948D /* ThemeManager.swift */,
 				02BAF2312D08204600C308D3 /* ProgressView.swift */,
 			);
@@ -553,6 +554,7 @@
 		02F083172D103B3C00120DF4 /* Helper+Shared */ = {
 			isa = PBXGroup;
 			children = (
+				0236F27D2CE6422E006A9A7E /* ValidationEnums.swift */,
 				0235E25B2CE8A34C006B2DFD /* DataController.swift */,
 				02DEF9812CF48C2600AD3908 /* CustomChart.swift */,
 				0270A0672CFD9A2F0052EB29 /* ConstantText.swift */,
@@ -611,6 +613,9 @@
 			);
 			dependencies = (
 				0236F2402CE60EA4006A9A7E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				0299B9A12D131C2D006A48B7 /* PortfolioTests */,
 			);
 			name = CryptoAppTests;
 			packageProductDependencies = (
@@ -791,7 +796,6 @@
 				02DEF9902CF4AF3A00AD3908 /* CryptoListDependencies.swift in Sources */,
 				027BF52C2CF42FC1009813D9 /* PortfolioDependencies.swift in Sources */,
 				0235E25A2CE8A2D0006B2DFD /* CardDetails.xcdatamodeld in Sources */,
-				0270A0612CFD850F0052EB29 /* VideoPlayer.swift in Sources */,
 				027BF5412CF43345009813D9 /* Constants.swift in Sources */,
 				027BF52F2CF42FC1009813D9 /* PortfolioPresenter.swift in Sources */,
 				0235E25C2CE8A34C006B2DFD /* DataController.swift in Sources */,

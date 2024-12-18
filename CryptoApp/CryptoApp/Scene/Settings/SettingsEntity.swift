@@ -70,7 +70,7 @@ let mockCryptoVideos: [Video] = [
           description: "Understand the fundamentals of Bitcoin and its decentralized nature."),
     
     Video(title: "Ethereum and Smart Contracts",
-          url: "https://example.com/ethereum-smart-contracts",
+          url: "https://youtu.be/ZyBpG8EEllc?si=PLUtORj3cE-ljCjV",
           description: "Explore Ethereum's blockchain and how smart contracts are transforming industries."),
     
     Video(title: "What is Cryptocurrency Mining?",
