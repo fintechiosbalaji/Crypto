@@ -71,10 +71,7 @@ final class PortfolioPresenter: PortfolioPresenterProtocol, ObservableObject {
     }
     
     func sellAction() {
+        self.portfolioData.path.append("")
         print("Sell action triggered")
-    }
-    
-    func detailsAction() {
-        print("Details action triggered")
     }
 }

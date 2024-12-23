@@ -73,4 +73,16 @@ final class PortfolioPresenterTests: XCTestCase {
             .store(in: &cancellables)
         wait(for: [expectation], timeout: 0.5)
     }
+    
+    func testBuyAction() throws {
+        let expectedPath = ["CryptoListView"]
+        presenter.buyAction()
+        expect(["CryptoListView"]).to(equal(expectedPath))
+    }
+    
+    func testSellAction() {
+        let expectedPath = ["CryptoListView"]
+        presenter.sellAction()
+        expect(["CryptoListView"]).to(equal(expectedPath))
+    }
 }
