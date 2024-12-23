@@ -12,17 +12,16 @@ struct CryptoAppApp: App {
     
     @StateObject private var dataController = DataController()
     @State private var selectedMode = 1
-
     
     var body: some Scene {
         WindowGroup {
-           // CurrencyConverterRouter.composeView()
+           // SettingsRouter.composeView()
             let router = WelcomeRouter()
             let interactor = WelcomeInteractor()
             let presenter = WelcomePresenter(interactor: interactor, router: router)
             WelcomeView(presenter: presenter)
                 .environment(\.managedObjectContext, dataController.container.viewContext)
-                .preferredColorScheme(.dark )
+                .preferredColorScheme(.dark)
         }
     }
 }

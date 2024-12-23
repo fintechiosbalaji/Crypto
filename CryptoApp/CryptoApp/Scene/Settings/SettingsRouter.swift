@@ -12,7 +12,6 @@ struct SettingsRouter: SettingsRouterProtocol {
     
     static func composeView() -> AnyView {
         let router = SettingsRouter()
-        let viewDependencies = SettingsViewDependencies()
         let interactor = SettingsInteractor()
         let presenter = SettingsPresenter(interactor: interactor, router: router)
         let view = SettingsView(presenter: presenter)

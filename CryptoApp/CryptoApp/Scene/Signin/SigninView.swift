@@ -106,7 +106,6 @@ struct SignInTextField: View {
     var textfieldImg: String
     var placeHolder: LocalizedStringKey
     var errorMessage: String?
-    
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
@@ -167,4 +166,3 @@ struct SignInTextField: View {
         }
     }
 }
-

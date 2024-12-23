@@ -16,7 +16,7 @@ final class CurrencyConverterInteractor: CurrencyConverterInteractorProtocol {
         self.service = service
     }
     
-    func fetchCurrencyList() -> AnyPublisher<Result<CurrencyList, NetworkError>, Never> {
+    func fetchCurrencyList() -> AnyPublisher<Result<CurrencyList, HttpNetworkError>, Never> {
         self.service.get(type: CurrencyList.self,
                          router: .fetchCurrency,
                          parameters: nil,
@@ -26,7 +26,7 @@ final class CurrencyConverterInteractor: CurrencyConverterInteractorProtocol {
     }
     
     func fetchConversionRate(from: String, to: String)
-               -> AnyPublisher<Result<CurrencyData, NetworkError>, Never> {
+               -> AnyPublisher<Result<CurrencyData, HttpNetworkError>, Never> {
         self.service.get(type: CurrencyData.self,
                          router: .currency(input: from, output: to),
                          parameters: nil,

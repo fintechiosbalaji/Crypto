@@ -24,7 +24,7 @@ protocol PortfolioPresenterProtocol {
 // MARK: - Interactor Protocol
 
 protocol PortfolioInteractorProtocol {
-    func fetchData() -> AnyPublisher<Result<[CryptoValueModel], NetworkError>, Never>
+    func fetchData() -> AnyPublisher<Result<[CryptoValueModel], HttpNetworkError>, Never>
 }
 
 // MARK: - Router Protocol

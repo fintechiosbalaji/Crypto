@@ -24,7 +24,7 @@ protocol MarketPresenterProtocol {
 // MARK: - Interactor Protocol
 
 protocol MarketInteractorProtocol {
-    func fetchMarketData() -> AnyPublisher<Result<[TestCrypto], NetworkError>, Never>
+    func fetchMarketData() -> AnyPublisher<Result<[TestCrypto], HttpNetworkError>, Never>
 }
 
 // MARK: - Router Protocol

@@ -17,7 +17,7 @@ final class PortfolioInteractor: PortfolioInteractorProtocol {
         self.service = service
     }
     
-    func fetchData() -> AnyPublisher<Result<[CryptoValueModel], NetworkError>, Never> {
+    func fetchData() -> AnyPublisher<Result<[CryptoValueModel], HttpNetworkError>, Never> {
         self.service.get(type: [CryptoValueModel].self,
                          router: .portfolio,
                          parameters: nil,

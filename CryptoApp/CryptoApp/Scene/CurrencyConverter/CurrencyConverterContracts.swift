@@ -24,8 +24,8 @@ protocol CurrencyConverterPresenterProtocol {
 // MARK: - Interactor Protocol
 
 protocol CurrencyConverterInteractorProtocol {
-    func fetchConversionRate(from: String, to: String) -> AnyPublisher<Result<CurrencyData, NetworkError>, Never>
-    func fetchCurrencyList() -> AnyPublisher<Result<CurrencyList, NetworkError>, Never>
+    func fetchConversionRate(from: String, to: String) -> AnyPublisher<Result<CurrencyData, HttpNetworkError>, Never>
+    func fetchCurrencyList() -> AnyPublisher<Result<CurrencyList, HttpNetworkError>, Never>
 }
 
 // MARK: - Router Protocol

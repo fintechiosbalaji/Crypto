@@ -56,7 +56,9 @@ struct CryptoPurchase: Codable {
     let weeklyValues: [Double] // Holds 7 days of data
 }
 
-struct CryptoValueModel: Identifiable, Codable {
+struct CryptoValueModel: Identifiable, Codable, Equatable {
+   
+    
     let id = UUID()
     let type: String
     let data: [CryptoGraphData]
@@ -72,9 +74,13 @@ struct CryptoValueModel: Identifiable, Codable {
         }
         return lastValue - firstValue
     }
+    
+    static func == (lhs: CryptoValueModel, rhs: CryptoValueModel) -> Bool {
+        lhs == rhs
+    }
 }
 
-struct CryptoGraphData: Identifiable, Codable {
+struct CryptoGraphData: Identifiable, Codable, Equatable  {
     let id = UUID()
     let date: String
     let value: Double

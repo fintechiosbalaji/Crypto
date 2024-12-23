@@ -22,7 +22,6 @@ protocol SettingsPresenterProtocol {
 // MARK: - Interactor Protocol
 protocol SettingsInteractorProtocol {
     func loadSettingsdata() -> [SettingsSection]
-    func addLanguageObserver()
 }
 
 // MARK: - Router Protocol

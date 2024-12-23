@@ -23,10 +23,8 @@ public enum UsernameValidation {
     }
 }
 
-
 public enum PasswordValidation {
     case empty
-
     var errorMessage: String? {
         switch self {
         case .empty:
