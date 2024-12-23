@@ -28,13 +28,19 @@ enum Language: String, CaseIterable {
     }
 }
 
-struct SettingsSection: Identifiable {
+struct SettingsSection: Identifiable, Equatable {
     let id = UUID()
     let title: String
     let items: [SettingsItem]
+    
+    static func == (lhs: SettingsSection, rhs: SettingsSection) -> Bool {
+            return lhs.id == rhs.id &&
+                   lhs.title == rhs.title &&
+                   lhs.items == rhs.items
+        }
 }
 
-struct SettingsItem: Identifiable {
+struct SettingsItem: Identifiable, Equatable {
     let id = UUID()
     let text: String
     let image: String?

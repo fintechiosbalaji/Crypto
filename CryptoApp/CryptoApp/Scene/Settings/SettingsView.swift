@@ -291,7 +291,7 @@ struct CloseButtonView: View {
 struct SearchBar: View {
     @Binding var text: String
     @State private var debounceTimer: AnyCancellable?
-
+    
     var body: some View {
         HStack {
             TextField("Search...", text: $text)

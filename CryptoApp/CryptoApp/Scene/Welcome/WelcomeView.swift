@@ -53,7 +53,7 @@ struct WelcomeView: View, WelcomeViewProtocol {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color("primaryColor"))
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
         .modifier(DarkModeViewModifier())
     }
 }

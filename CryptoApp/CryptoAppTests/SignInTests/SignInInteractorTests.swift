@@ -89,7 +89,6 @@ final class SignInInteractorTests: XCTestCase {
         interactor.validateCredentials(email: "invalid-email", password: "short") { emailError, passwordError in
             //            XCTAssertEqual(emailError, "Invalid email address", "Expected email validation error")
             //            XCTAssertEqual(passwordError, "Password must be at least 8 characters", "Expected password validation error")
-            
             expect(emailError).to(equal("Invalid email address"), description: "Expected email validation error")
             expect(passwordError).to(equal("Password must be at least 8 characters"), description: "Expected password validation error")
         }

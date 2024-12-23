@@ -19,4 +19,3 @@ final class SettingsInteractor: SettingsInteractorProtocol {
         return mockSettings
     }
 }
-

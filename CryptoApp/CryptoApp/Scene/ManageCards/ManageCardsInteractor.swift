@@ -133,8 +133,6 @@ final class ManageCardsInteractor: ManageCardsInteractorProtocol {
         if userSelectedCardType.lowercased() != cardType.lowercased() {
             return "Invalid selected card type or entered card number."
         }
-        
-        
         // All validations passed
         return nil
     }

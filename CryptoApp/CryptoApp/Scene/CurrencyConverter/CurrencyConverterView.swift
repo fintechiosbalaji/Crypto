@@ -11,6 +11,10 @@ import AVKit
 
 struct CurrencyConverterView: View, CurrencyConverterViewProtocol {
     
+    private enum Field: Int, CaseIterable {
+           case actualCrncy, convertedCrncy
+       }
+    
     @ObservedObject
     private var presenter: CurrencyConverterPresenter
     
@@ -23,6 +27,7 @@ struct CurrencyConverterView: View, CurrencyConverterViewProtocol {
     @AppStorage("language")
     private var selectedLanguage = LocalizationService.shared.language
     @State private var isDropdownOpen = false
+    @FocusState private var focusedField: Field?
    
     var body: some View {
         ZStack {
@@ -35,11 +40,13 @@ struct CurrencyConverterView: View, CurrencyConverterViewProtocol {
                 
                 VStack(alignment: .center) {
                     SearchableDropdownMenu(selectedOption: $presenter.selectedSourceCurrency, options: presenter.currencyConverterList)
-                       
+                    
                     TextField("Enter Currency Value".localized(selectedLanguage), text: $presenter.currencyValue)
                         .padding(20)
                         .keyboardType(.decimalPad)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .focused($focusedField, equals: .actualCrncy)
+                    
                     
                     SearchableDropdownMenu(selectedOption: $presenter.selectedTargetCurrency, options: presenter.currencyConverterList)
                     
@@ -68,6 +75,14 @@ struct CurrencyConverterView: View, CurrencyConverterViewProtocol {
                         .padding(20)
                         .keyboardType(.decimalPad)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .focused($focusedField, equals: .convertedCrncy)
+                }
+                .toolbar {
+                    ToolbarItem(placement: .keyboard) {
+                        Button("Done") {
+                            focusedField = nil
+                        }
+                    }
                 }
                 .padding()
             }
