@@ -8,18 +8,10 @@
 import Foundation
 import SwiftUI
 
-class LanguageManager: ObservableObject {
-    @Published var currentLanguage: Language = LocalizationService.shared.language {
-        didSet {
-            LocalizationService.shared.language = currentLanguage
-        }
-    }
-}
-
 class LocalizationService {
 
     static let shared = LocalizationService()
-    static let changedLanguage = Notification.Name("changedLanguage")
+  //  static let changedLanguage = Notification.Name("changedLanguage")
 
     private init() {}
     
@@ -32,7 +24,7 @@ class LocalizationService {
         } set {
             if newValue != language {
                 UserDefaults.standard.setValue(newValue.rawValue, forKey: "language")
-                NotificationCenter.default.post(name: LocalizationService.changedLanguage, object: nil)
+               // NotificationCenter.default.post(name: LocalizationService.changedLanguage, object: nil)
             }
         }
     }

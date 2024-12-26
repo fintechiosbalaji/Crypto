@@ -14,7 +14,8 @@ struct SigninView: View, SigninViewProtocol {
     private var presenter: SigninPresenter
     @EnvironmentObject var authService:AuthService
     @State private var isPasswordVisible: Bool = false
-  
+    @AppStorage("isLoggedIn") private var isLoggedIn = false
+    
     init(presenter: SigninPresenter) {
         self.presenter = presenter
     }
@@ -25,19 +26,22 @@ struct SigninView: View, SigninViewProtocol {
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 logincustomView
+                
                 if !presenter.loginStatus.desc.isEmpty {
                     Text(presenter.loginStatus.desc)
                         .foregroundColor(presenter.loginStatus == .success ? .green : .red)
-                        .padding(.top, 10) .onAppear {
-                            if presenter.loginStatus == .success {
-                                presenter.navigateToDashboard = true
-                            }
-                        }
+                        .padding(.top, 10)
                 }
             }
             NavigationLink(destination: presenter.router.navigateToDashboard(),
                            isActive: $presenter.navigateToDashboard) {
                 EmptyView()
+            }
+        }
+        .onChange(of: presenter.loginStatus) { _ ,status in
+            if status == .success {
+                isLoggedIn = true
+                presenter.navigateToDashboard = true
             }
         }
         .background(.red)

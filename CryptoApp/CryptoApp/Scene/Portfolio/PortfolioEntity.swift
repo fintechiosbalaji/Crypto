@@ -57,8 +57,6 @@ struct CryptoPurchase: Codable {
 }
 
 struct CryptoValueModel: Identifiable, Codable, Equatable {
-   
-    
     let id = UUID()
     let type: String
     let data: [CryptoGraphData]
@@ -75,8 +73,11 @@ struct CryptoValueModel: Identifiable, Codable, Equatable {
         return lastValue - firstValue
     }
     
-    static func == (lhs: CryptoValueModel, rhs: CryptoValueModel) -> Bool {
-        lhs == rhs
+    static func == (lhs: Self, rhs: Self) -> Bool {
+        return lhs.id == rhs.id &&
+        lhs.type == rhs.type &&
+        lhs.data == rhs.data &&
+        lhs.purchasedFlag == rhs.purchasedFlag
     }
 }
 
@@ -84,6 +85,12 @@ struct CryptoGraphData: Identifiable, Codable, Equatable  {
     let id = UUID()
     let date: String
     let value: Double
+    
+    static func == (lhs: Self, rhs: Self) -> Bool {
+        return lhs.id == rhs.id &&
+        lhs.date == rhs.date &&
+        lhs.value == rhs.value
+    }
 }
 
 let portfolioMockData: [CryptoValueModel] = [

@@ -63,6 +63,7 @@
 		027BF5442CF43345009813D9 /* Decoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BF5382CF43345009813D9 /* Decoders.swift */; };
 		027BF5472CF43345009813D9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BF53D2CF43345009813D9 /* NetworkManager.swift */; };
 		0283949A2D070F37009D5802 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028394992D070F37009D5802 /* CustomViews.swift */; };
+		02A2ED692D1A8CAD0027D572 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A2ED682D1A8CAD0027D572 /* LocalFileManager.swift */; };
 		02B476892D115B4200398763 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B476882D115B4200398763 /* SwiftUIView.swift */; };
 		02BAF2322D08204600C308D3 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BAF2312D08204600C308D3 /* ProgressView.swift */; };
 		02C275952CF5A8B60032DB60 /* BarchartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C275942CF5A8B60032DB60 /* BarchartView.swift */; };
@@ -191,6 +192,8 @@
 		027BF5382CF43345009813D9 /* Decoders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decoders.swift; sourceTree = "<group>"; };
 		027BF53D2CF43345009813D9 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		028394992D070F37009D5802 /* CustomViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
+		029CAC152D1DD0EE007B9225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		02A2ED682D1A8CAD0027D572 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 		02B476882D115B4200398763 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		02BAF2312D08204600C308D3 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		02C275942CF5A8B60032DB60 /* BarchartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarchartView.swift; sourceTree = "<group>"; };
@@ -312,6 +315,7 @@
 		0236F2302CE60EA2006A9A7E /* CryptoApp */ = {
 			isa = PBXGroup;
 			children = (
+				029CAC152D1DD0EE007B9225 /* Info.plist */,
 				02C275932CF5A8970032DB60 /* HelperView */,
 				0236F2312CE60EA2006A9A7E /* CryptoAppApp.swift */,
 				0236F2332CE60EA2006A9A7E /* ContentView.swift */,
@@ -565,6 +569,7 @@
 				02DEF9812CF48C2600AD3908 /* CustomChart.swift */,
 				0270A0672CFD9A2F0052EB29 /* ConstantText.swift */,
 				02F083152D103AED00120DF4 /* LocalizationService.swift */,
+				02A2ED682D1A8CAD0027D572 /* LocalFileManager.swift */,
 			);
 			path = "Helper+Shared";
 			sourceTree = "<group>";
@@ -823,6 +828,7 @@
 				022203872CF9D6BD00A2693E /* DropDownView.swift in Sources */,
 				02DEF9822CF48C2600AD3908 /* CustomChart.swift in Sources */,
 				0236F27E2CE6422E006A9A7E /* ValidationEnums.swift in Sources */,
+				02A2ED692D1A8CAD0027D572 /* LocalFileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1008,8 +1014,10 @@
 				DEVELOPMENT_TEAM = 3D4SYZ296M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CryptoApp;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "for login";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1046,8 +1054,10 @@
 				DEVELOPMENT_TEAM = 3D4SYZ296M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CryptoApp;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "for login";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

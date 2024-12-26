@@ -23,6 +23,7 @@ final class SigninPresenter: SigninPresenterProtocol, ObservableObject {
      @Published var passwordError: String?
      @Published var isValid: Bool = false
      @Published var navigateToDashboard: Bool = false
+     @AppStorage("isLoggedIn") private var isLoggedIn = false
  
     private let interactor: SigninInteractorProtocol
     let router: SigninRouterProtocol

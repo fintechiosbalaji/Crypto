@@ -22,8 +22,12 @@ struct SettingsView: View, SettingsViewProtocol {
     
     @AppStorage("theme")
     var isDarkMode: Bool = true
+    
     @AppStorage("language")
     private var selectedLanguage = LocalizationService.shared.language
+    
+    @AppStorage("isLoggedIn") private var isLoggedIn = false
+    @Environment(\.presentationMode) private var presentationMode
     
     init(presenter: SettingsPresenter) {
         self.presenter = presenter
@@ -123,6 +127,7 @@ struct SettingsView: View, SettingsViewProtocol {
         switch (data.text) {
         case LocalizationKeys.Settings.logout:
             print("Logout triggered from settingsRow")
+            self.handleLogout()
             break;
         case LocalizationKeys.Settings.privacyPolicy
             , LocalizationKeys.Settings.termsAndConditions:
@@ -134,10 +139,16 @@ struct SettingsView: View, SettingsViewProtocol {
             break;
         case LocalizationKeys.Settings.helpCenter:
             isHelpCenter = true
-            
             break;
         default:
             break;
+        }
+    }
+    
+    private func handleLogout() {
+        isLoggedIn = false
+        DispatchQueue.main.async {
+            self.presentationMode.wrappedValue.dismiss()
         }
     }
 }

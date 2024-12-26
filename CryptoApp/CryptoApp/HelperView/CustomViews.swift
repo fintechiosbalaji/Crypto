@@ -7,22 +7,20 @@
 
 import SwiftUI
 
-
 struct ProfileHeaderView: View {
-    
-    @State private var profileImage: Image? = Image("profile")  // Default profile image
     @State private var showImagePicker = false
     @Environment(\.colorScheme) var colorScheme
+    @StateObject private var localFMViewModel = LocalFMViewModel()
     
     var body: some View {
         HStack {
-            profileImage?
+            (localFMViewModel.image.map { Image(uiImage: $0) } ?? Image("profile"))
                 .resizable()
                 .frame(width: 40, height: 40)
                 .clipShape(Circle())
                 .foregroundColor(.gray)
                 .onTapGesture {
-                    showImagePicker.toggle()  // Trigger image picker
+                    showImagePicker.toggle()
                 }
             Text("Balaji")
                 .font(.body)
@@ -43,9 +41,15 @@ struct ProfileHeaderView: View {
                     )
             }
         }
-        .sheet(isPresented: $showImagePicker) {
-            ImagePickerView(profileImage: $profileImage)
-                .frame(maxWidth: .infinity, maxHeight: 400)// Image picker view
+        .popover(isPresented: $showImagePicker) {
+            ImagePickerView(viewModel: localFMViewModel)
+                .frame(minWidth: 300, maxHeight: 400)
+                .presentationCompactAdaptation(.popover)
+                .padding()
+        }
+        .onAppear {
+            localFMViewModel.imageName = "profile.png" // Set the image name
+            localFMViewModel.getImageFromeFileManager()
         }
         .padding(.all, 20)
         .primaryBackground()
@@ -54,33 +58,33 @@ struct ProfileHeaderView: View {
 }
 
 struct ImagePickerView: View {
-    @Binding var profileImage: Image?  // Bind the profileImage state to update the selected image
     
+    @ObservedObject var viewModel: LocalFMViewModel
     @Environment(\.dismiss) var dismiss  // Dismiss the sheet after selecting the image
-    
-    @State private var selectedUIImage: UIImage?
     
     var body: some View {
         VStack {
-            ImagePicker(isPresented: .constant(true), selectedImage: $selectedUIImage)
+            // picker
+            ImagePicker(isPresented: .constant(true), selectedImage: $viewModel.image)
             
-            if let selectedUIImage = selectedUIImage {
-                Image(uiImage: selectedUIImage)
+            if let selectedImage = viewModel.image {
+                Image(uiImage: selectedImage)
                     .resizable()
                     .scaledToFill()
                     .frame(width: 100, height: 100)
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.gray, lineWidth: 2))
                     .padding()
-                
                 // Update profile image with the selected image
-                Button("Use this image") {
-                    profileImage = Image(uiImage: selectedUIImage)
+                Button("Set Profile Image") {
+                    viewModel.saveImage()
                     dismiss()
                 }
-                .padding()
             }
         }
+        .padding(10)
+        .cornerRadius(10)
+        .shadow(radius: 5)
     }
 }
 
@@ -118,18 +122,4 @@ struct ImagePicker: UIViewControllerRepresentable {
     }
     
     func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {}
-}
-
-// tabbar contentView
-struct TabViewItemView: View {
-    let title: String
-    
-    var body: some View {
-        Form {
-            //
-        }
-        .listStyle(.insetGrouped)
-        .primaryBackground()
-        .scrollContentBackground(.hidden)
-    }
 }

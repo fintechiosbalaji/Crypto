@@ -7,22 +7,6 @@
 
 import SwiftUI
 
-//class ThemeManager: ObservableObject {
-//    @Published var selectedTheme: String = "system" // "system", "light", "dark"
-//    
-//    var currentColorScheme: ColorScheme? {
-//        switch selectedTheme {
-//        case "light":
-//            return .light
-//        case "dark":
-//            return .dark
-//        default:
-//            return nil // System default
-//        }
-//    }
-//}
-
-
 enum Theme: String, CaseIterable {
     case light
     case dark

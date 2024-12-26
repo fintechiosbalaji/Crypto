@@ -68,7 +68,7 @@ struct Video: Identifiable {
 
 let mockCryptoVideos: [Video] = [
     Video(title: "Introduction to Blockchain",
-          url: "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8",
+          url: "https://youtu.be/ZyBpG8EEllc?si=PLUtORj3cE-ljCjV",
           description: "Learn the basics of blockchain technology and how it works."),
     
     Video(title: "How Bitcoin Works",
@@ -80,11 +80,11 @@ let mockCryptoVideos: [Video] = [
           description: "Explore Ethereum's blockchain and how smart contracts are transforming industries."),
     
     Video(title: "What is Cryptocurrency Mining?",
-          url: "https://example.com/crypto-mining",
+          url: "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8",
           description: "A deep dive into how cryptocurrency mining works and its role in the blockchain network."),
     
     Video(title: "Decentralized Finance (DeFi) Explained",
-          url: "https://example.com/defi-explained",
+          url: "https://youtu.be/ZyBpG8EEllc?si=PLUtORj3cE-ljCjV",
           description: "An overview of Decentralized Finance (DeFi) and its impact on the financial system."),
     
     Video(title: "Understanding NFTs (Non-Fungible Tokens)",
